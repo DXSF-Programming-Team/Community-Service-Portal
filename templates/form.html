@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="/student_portal">Back to Student Portal</a>
+    <div class="form-container">
+        <form method="post">
+            <h1 class="text-center">Community Service Form</h1>
+            <div class="form-group required">
+                <label for="student_name">Name</label>
+                <input type="text" name="student_name" placeholder="Your name">
+            </div>
+            <div class="form-group required">
+                <label for="graduation_year">Graduation Year</label>
+                <select name="graduation_year">
+                    <option value="{{ senior_grad_year }}">{{ senior_grad_year }}</option>
+                    <option value="{{ senior_grad_year + 1 }}">{{ senior_grad_year + 1 }}</option>
+                    <option value="{{ senior_grad_year + 2 }}">{{ senior_grad_year + 2 }}</option>
+                    <option value="{{ senior_grad_year + 3 }}">{{ senior_grad_year + 3 }}</option>
+                </select>
+            </div>
+            <div class="form-group required">
+                <label for="student_email">Email</label>
+                <input type="email" name="student_email" placeholder="Your DXSF email">
+            </div>
+            <div class="form-group required">
+                <label for="service_date">Date of service</label>
+                <input type="date" name="service_date" placeholder="Date of service">
+            </div>
+            <div class="form-group required">
+                <label for="organization_name">Organization Name</label>
+                <input type="text" name="organization_name" placeholder="Name of service organization">
+            </div>
+            <div class="form-group required">
+                <label for="contact_name">Contact Name</label>
+                <input type="text" name="contact_name" placeholder="Name of contact at service organization">
+            </div>
+            <div class="form-group required">
+                <label for="contact_email">Contact Email</label>
+                <input type="text" name="contact_email" placeholder="Email number of contact at service organization">
+            </div>
+            <div class="form-group required">
+                <label for="hours">Hours</label>
+                <input type="number" name="hours" placeholder="Number of hours">
+            </div>
+            <div class="form-group required">
+                <label for="description">Description</label>
+                <input type="text" name="description" placeholder="Description of service">
+            </div>
+            <div class="form-group required">
+                <label for="proof_of_service">Proof of service</label>
+                <input type="file" name="proof_of_service" placeholder="Proof of service">
+            </div>
+            <br>
+            <div class="form-check">
+                <input type="checkbox" name="oath">
+                <label class="form-check-label" for="oath">I have completed this form truthfully and accurately.</label>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
