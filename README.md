@@ -52,7 +52,7 @@ P.S.-
 If you ever want to open the SQL interactive mode to manually edit the database, run
 
 ```bash
-docker exec -it fakemon-db psql -U postgres -d app_db
+docker exec -it community-service-db psql -U postgres -d app_db
 ```
 
 See https://www.geeksforgeeks.org/sql/sql-cheat-sheet/ for a quick list of commands.
