@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    {% block head %}{% endblock %}
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+        .header-text {
+            margin-top: 1rem;
+            font-size: 2.2rem;
+            color: #002d5b;
+            text-align: center;
+        }
+        .login-link {
+            text-align: center;
+        }
+        .login-link a {
+            color: #007bff;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group label::after {
+            content: "*";
+            color: red;
+            margin-left: 2px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+        .name-container {
+            display: flex;
+            gap: 10px;
+        }
+        .is-invalid:focus {
+            outline-color: red;
+        }
+        .btn-submit {
+            background-color: #a30c33;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 1rem;
+            width: 100%;
+        }   
+        .btn-submit:hover {
+            background-color: #c82333;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    {% block styles %}{% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+    {% block scripts %}{% endblock %}
+</body>
+</html>
