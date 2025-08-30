@@ -1,1782 +1,2079 @@
 [
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 1,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Dylan Agelson",
         "title": "Lower School Faculty, Boys' Class 4",
         "email": "dagelson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Marlena_Alex.jpg",
+        "serial_id": 2,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Marlena_Alex.jpg",
         "name": "Marlena Alex",
         "title": "Head of Lower School",
         "email": "malex@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carmen_Aliber.jpg",
+        "serial_id": 3,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carmen_Aliber.jpg",
         "name": "Carmen Aliber",
         "title": "Director of Human Resources",
         "email": "caliber@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Shelby_Aseltine.jpg",
+        "serial_id": 4,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Shelby_Aseltine.jpg",
         "name": "Shelby Aseltine",
         "title": "Middle School Faculty, English",
         "email": "saseltine@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Augustus_Augustus.jpg",
+        "serial_id": 5,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Augustus_Augustus.jpg",
         "name": "Augustus Augustus",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 6,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Robyn Auslander",
         "title": "School Counseling Intern",
         "email": "rauslander@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Melanie_Bachteler.jpg",
+        "serial_id": 7,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Melanie_Bachteler.jpg",
         "name": "Melanie Bachteler",
         "title": "Athletics Faculty, Athletic Trainer",
         "email": "mbachteler@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/April_Baker.jpg",
+        "serial_id": 8,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/April_Baker.jpg",
         "name": "April Baker",
         "title": "Director of Marketing & Communications",
         "email": "abaker@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Molly_Barrow.jpg",
+        "serial_id": 9,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Molly_Barrow.jpg",
         "name": "Molly Barrow",
         "title": "Middle School Faculty, Science",
         "email": "mbarrow@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lisa_Bauer.jpg",
+        "serial_id": 10,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lisa_Bauer.jpg",
         "name": "Lisa Bauer",
         "title": "Middle School Faculty, Learning Specialist",
         "email": "lbauer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/BeckettJason.jpg",
+        "serial_id": 11,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/BeckettJason.jpg",
         "name": "Jason Beckett",
         "title": "Director of Facilities and Operations",
         "email": "jbeckett@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 12,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Kanishka Behgaam",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Berk.jpg",
+        "serial_id": 13,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Berk.jpg",
         "name": "Matthew Berk",
         "title": "Upper School Faculty, English Department Chair; Assistant Coach, Boys' Varsity Cross Country",
         "email": "mberk@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Berman.jpg",
+        "serial_id": 14,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Berman.jpg",
         "name": "Sarah Berman",
         "title": "Upper School Faculty, Teaching Assistant",
         "email": "sberman@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 15,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Michelle Bernstein",
         "title": "Lower School Faculty, Computer and Technology",
         "email": "mbernstein@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catharine_Berry-Toon.jpg",
+        "serial_id": 16,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catharine_Berry-Toon.jpg",
         "name": "Catharine Berry-Toon",
         "title": "Middle School Faculty, English; Assistant Coach, Boys' and Girls' Varsity Swimming and Girls' Varsity Rowing",
         "email": "cberrytoon@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jemmel_Billingslea.jpg",
+        "serial_id": 17,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jemmel_Billingslea.jpg",
         "name": "Jemmel Billingslea",
         "title": "Director of Character and Leadership",
         "email": "jbillingslea@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Bingham.jpg",
+        "serial_id": 18,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Bingham.jpg",
         "name": "Ryan \"Ryan\" Bingham",
         "title": "Facilities Technician",
         "email": "rbingham@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/0010_Blanc_Cedric_01_(1).jpg",
+        "serial_id": 19,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/0010_Blanc_Cedric_01_(1).jpg",
         "name": "Cedric Blanc",
         "title": "Senior IT Support Specialist",
         "email": "cblanc@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_Bligh.jpg",
+        "serial_id": 20,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_Bligh.jpg",
         "name": "David Bligh",
         "title": "Upper School Faculty, Visual Arts",
         "email": "dbligh@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Casey_Bobo.jpg",
+        "serial_id": 21,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Casey_Bobo.jpg",
         "name": "Casey Bobo",
         "title": "Assistant Head of School",
         "email": "cbobo@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Booth.jpg",
+        "serial_id": 22,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Booth.jpg",
         "name": "John Booth",
         "title": "Head of Upper School",
         "email": "jbooth@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julia_Booth.jpg",
+        "serial_id": 23,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julia_Booth.jpg",
         "name": "Julia Booth",
         "title": "Upper School Faculty, Science",
         "email": "jubooth@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tamara_Breda.jpg",
+        "serial_id": 24,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tamara_Breda.jpg",
         "name": "Tamara Breda",
         "title": "Lower School Faculty, Boys' PreK",
         "email": "tbreda@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paula_Brock.jpg",
+        "serial_id": 25,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paula_Brock.jpg",
         "name": "Paula Brock",
         "title": "Lower School Faculty, Learning Specialist",
         "email": "pbrock@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kim_Brooks.jpg",
+        "serial_id": 26,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kim_Brooks.jpg",
         "name": "Kim Brooks",
         "title": "Middle School Faculty, History",
         "email": "kbrooks@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Neil_Budden.jpg",
+        "serial_id": 27,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Neil_Budden.jpg",
         "name": "Neil Budden",
         "title": "Director of Information Technology",
         "email": "nbudden@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Deirdre_Burke.jpg",
+        "serial_id": 28,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Deirdre_Burke.jpg",
         "name": "Deirdre Burke",
         "title": "Upper School Faculty, English",
         "email": "dburke@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsey_Burns.jpg",
+        "serial_id": 29,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsey_Burns.jpg",
         "name": "Kelsey Burns",
         "title": "Assistant Director of Annual Giving and Alumni Relations",
         "email": "kburns@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 30,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Donald Campbell",
         "title": "Lower School Faculty, Music",
         "email": "dcampbell@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kristen_Campopiano.jpg",
+        "serial_id": 31,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kristen_Campopiano.jpg",
         "name": "Kristen Campopiano",
         "title": "Athletics Faculty",
         "email": "kcampopiano@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CapozziMary.jpg",
+        "serial_id": 32,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CapozziMary.jpg",
         "name": "Mary Capozzi",
         "title": "Upper School Faculty, Math and Science",
         "email": "mcapozzi@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Andrew_Carter.jpg",
+        "serial_id": 33,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Andrew_Carter.jpg",
         "name": "Andrew Carter",
         "title": "Athletics Faculty, Director of Rowing, Coach, Boys' and Girls' Varsity Rowing",
         "email": "acarter@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CesarNehemie.jpg",
+        "serial_id": 34,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CesarNehemie.jpg",
         "name": "Nehemie Cesar",
         "title": "Instructional Technology Specialist",
         "email": "ncesar@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Garret_Chance.jpg",
+        "serial_id": 35,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Garret_Chance.jpg",
         "name": "Garret Chance",
         "title": "Athletics Faculty, Director of Swimming; Lower School, Coach, Boys' and Girls' Varsity Swimming; Teaching Assistant",
         "email": "gchance@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scot_Chandler.jpg",
+        "serial_id": 36,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scot_Chandler.jpg",
         "name": "Scot Chandler",
         "title": "Lower School Faculty, Science",
         "email": "chandlerscotn@gmail.com"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Justin_Charles.jpg",
+        "serial_id": 37,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Justin_Charles.jpg",
         "name": "Justin Charles",
         "title": "Middle School Faculty, History",
         "email": "jcharles@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Charles_Pascal.JPG",
+        "serial_id": 38,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Charles_Pascal.JPG",
         "name": "Pascal Charles",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Erik_Chase.jpg",
+        "serial_id": 39,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Erik_Chase.jpg",
         "name": "Erik Chase",
         "title": "Upper School Faculty, Math",
         "email": "echase@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Chen_Michael.JPG",
+        "serial_id": 40,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Chen_Michael.JPG",
         "name": "Michael Chen",
         "title": "Dining Services Manager",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Katherine_Clark.jpg",
+        "serial_id": 41,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Katherine_Clark.jpg",
         "name": "Katherine Clark",
         "title": "Upper School Faculty, Language",
         "email": "kclark@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Clark.jpg",
+        "serial_id": 42,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Clark.jpg",
         "name": "Matthew Clark",
         "title": "Athletic Facilities Supervisor",
         "email": "mclark@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jennifer_Clawson.jpg",
+        "serial_id": 43,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jennifer_Clawson.jpg",
         "name": "Jennifer Clawson",
         "title": "Sports Information Coordinator",
         "email": "jclawson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Clervil_Myrline.JPG",
+        "serial_id": 44,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Clervil_Myrline.JPG",
         "name": "Myrline Clervil",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Andrew_Cobuccio.jpg",
+        "serial_id": 45,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Andrew_Cobuccio.jpg",
         "name": "Andrew Cobuccio",
         "title": "Financial Analyst",
         "email": "acobuccio@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amy_Cokinos.jpg",
+        "serial_id": 46,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amy_Cokinos.jpg",
         "name": "Amy Cokinos",
         "title": "Assistant Athletic Director, Scheduling & Referees",
         "email": "acokinos@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mia_Conte.jpg",
+        "serial_id": 47,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mia_Conte.jpg",
         "name": "Mia Conte",
         "title": "Leadership Gifts Officer, Assistant Coach, Girls' Varsity Track and Field",
         "email": "mconte@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Margaret_Coppola.jpg",
+        "serial_id": 48,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Margaret_Coppola.jpg",
         "name": "Margaret Coppola",
         "title": "Lower School Faculty, Science",
         "email": "mcoppola@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ann_Corbett.jpg",
+        "serial_id": 49,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ann_Corbett.jpg",
         "name": "Ann Corbett",
         "title": "Middle School Faculty, Language Department Chair",
         "email": "acorbett@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 50,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Maureen Cosgrove",
         "title": "Lower School Faculty; Teaching Assistant;",
         "email": "mcosgrove@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jane_Croke.jpg",
+        "serial_id": 51,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jane_Croke.jpg",
         "name": "Jane Croke",
         "title": "Associate Director of College Counseling",
         "email": "jcroke@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rachel_Croke.jpg",
+        "serial_id": 52,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rachel_Croke.jpg",
         "name": "Rachel Croke",
         "title": "Lower School Faculty, Girls' Class 2",
         "email": "rcroke@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mariana_Cruz-Fernandez.jpg",
+        "serial_id": 53,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mariana_Cruz-Fernandez.jpg",
         "name": "Mariana Cruz-Fernandez",
         "title": "Upper School Faculty, Language Department Chair",
         "email": "mcruzfernandez@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Cullinane.jpg",
+        "serial_id": 54,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Cullinane.jpg",
         "name": "Lauren Cullinane",
         "title": "External Relations Coordinator",
         "email": "lcullinane@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/Green_Resized/CZECH-DENNIS_headshot.jpg",
+        "serial_id": 55,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/Green_Resized/CZECH-DENNIS_headshot.jpg",
         "name": "Dennis Czech",
         "title": "Athletics Faculty, Coach, Boys\u2019 and Girls\u2019 Varsity Tennis",
         "email": "dczech@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CzubrytRachel.jpg",
+        "serial_id": 56,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/CzubrytRachel.jpg",
         "name": "Rachel Czubryt",
         "title": "Assistant Director of Campus Programs",
         "email": "rczubryt@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Cheryle_D'Amelio.jpg",
+        "serial_id": 57,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Cheryle_D'Amelio.jpg",
         "name": "Cheryle D'Amelio",
         "title": "Registrar",
         "email": "cdamelio@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Janine_Darling.jpg",
+        "serial_id": 58,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Janine_Darling.jpg",
         "name": "Janine Darling",
         "title": "Upper School Dean of Students; Upper School Faculty, Language and History",
         "email": "jdarling@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DayCasey.jpg",
+        "serial_id": 59,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DayCasey.jpg",
         "name": "Casey Day",
         "title": "Athletics Faculty, Coach, Boys' Varsity Football",
         "email": "cday@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Joseph_Delaney.jpg",
+        "serial_id": 60,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Joseph_Delaney.jpg",
         "name": "Joseph Delaney",
         "title": "Middle School Faculty, Math; Assistant Coach, Girls' Varsity Ice Hockey",
         "email": "jdelaney@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Marina_DeLuca.jpg",
+        "serial_id": 61,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Marina_DeLuca.jpg",
         "name": "Marina DeLuca",
         "title": "Athletics Faculty, Athletics Faculty and Coach",
         "email": "mdeluca@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Cory_Derby.jpg",
+        "serial_id": 62,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Cory_Derby.jpg",
         "name": "Cory Derby",
         "title": "Lower School Faculty, Girls' Class 4",
         "email": "cderby@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DeverLauren.jpg",
+        "serial_id": 63,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DeverLauren.jpg",
         "name": "Lauren Dever",
         "title": "Upper School Faculty, History",
         "email": "ldever@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Dimock.jpg",
+        "serial_id": 64,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Dimock.jpg",
         "name": "Matthew Dimock",
         "title": "Upper School Faculty, Visual Arts Department Chair",
         "email": "mdimock@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Daniel_DiNicola2.jpg",
+        "serial_id": 65,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Daniel_DiNicola2.jpg",
         "name": "Daniel \"Dan\" Dinicola",
         "title": "Assistant Coach, Boys' Varsity Football, Assistant Coach, Boys' Varsity Football",
         "email": "ddinicola@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Robert_Donahue.jpg",
+        "serial_id": 66,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Robert_Donahue.jpg",
         "name": "Robert Donahue",
         "title": "Upper School Faculty, History; Coach, Boys' Varsity Golf; Assistant Coach, Boys' Varsity Soccer",
         "email": "rdonahue@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Donato.jpg",
+        "serial_id": 67,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Donato.jpg",
         "name": "Daniel Donato",
         "title": "Senior Associate Director of Admissions, Coach, Boys' Varsity Ice Hockey and Baseball",
         "email": "ddonato@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kara_Nelson.jpg",
+        "serial_id": 68,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kara_Nelson.jpg",
         "name": "Kara Donovan",
         "title": "Lower School Faculty, Girls' Class 2",
         "email": "kdonovan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Donovan.jpg",
+        "serial_id": 69,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Donovan.jpg",
         "name": "Ryan Donovan",
         "title": "Athletics Faculty, Head Athletic Trainer",
         "email": "rdonovan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jean_Dorcile.jpg",
+        "serial_id": 70,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jean_Dorcile.jpg",
         "name": "Jean Dorcile",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lena_Doten.jpg",
+        "serial_id": 71,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lena_Doten.jpg",
         "name": "Lena Doten",
         "title": "Middle School Girls' Dean of Students; Middle School Faculty, Math",
         "email": "ldoten@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Downey.jpg",
+        "serial_id": 72,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Downey.jpg",
         "name": "Sarah Downey",
         "title": "Upper School Faculty, Math; Assistant Coach, Girls' Varsity Squash",
         "email": "sdowney@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Droney.jpg",
+        "serial_id": 73,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Droney.jpg",
         "name": "Matthew Droney",
         "title": "Coach, Boys' Varsity Basketball, Alumni Leadership Gift Officer",
         "email": "mdroney@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scott_Duddy.jpg",
+        "serial_id": 74,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scott_Duddy.jpg",
         "name": "Scott Duddy",
         "title": "Director of Admissions and Enrollment Management",
         "email": "sduddy@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DwyerSabrina.jpg",
+        "serial_id": 75,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/DwyerSabrina.jpg",
         "name": "Sabrina Dwyer",
         "title": "Director of Events",
         "email": "sdwyer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 76,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Elizabeth Eby",
         "title": "Middle School Faculty, English",
         "email": "eeby@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Edmond_Jean.JPG",
+        "serial_id": 77,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Edmond_Jean.JPG",
         "name": "Jean Edmond",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julian_Egolf.jpg",
+        "serial_id": 78,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julian_Egolf.jpg",
         "name": "Julian Egolf",
         "title": "Upper School Faculty, Math",
         "email": "jegolf@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Patrick_Elwood.jpg",
+        "serial_id": 79,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Patrick_Elwood.jpg",
         "name": "Patrick Elwood",
         "title": "Campus Safety and Security Officer",
         "email": "pelwood@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anthony_Escobedo.jpg",
+        "serial_id": 80,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anthony_Escobedo.jpg",
         "name": "Anthony Escobedo",
         "title": "Middle School Faculty, Language",
         "email": "aescobedo@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Valex_Etienne.jpg",
+        "serial_id": 81,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Valex_Etienne.jpg",
         "name": "Valex Etienne",
         "title": "Help Desk Manager",
         "email": "vetienne@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/FabianoSabella.jpg",
+        "serial_id": 82,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/FabianoSabella.jpg",
         "name": "Sabella Fabiano",
         "title": "Associate Director of Marketing & Communications",
         "email": "sfabiano@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Todd_Fawcett.jpg",
+        "serial_id": 83,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Todd_Fawcett.jpg",
         "name": "Todd Fawcett",
         "title": "Head of Middle School",
         "email": "tfawcett@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Fazen_Curtis.JPG",
+        "serial_id": 84,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Fazen_Curtis.JPG",
         "name": "Curtis Fazen",
         "title": "Upper School Faculty, Language",
         "email": "cfazen@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsey_Federico.jpg",
+        "serial_id": 85,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsey_Federico.jpg",
         "name": "Kelsey Federico",
         "title": "Athletics Faculty, Strength and Conditioning, Coach, Girls' Varsity Field Hockey",
         "email": "kfederico@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Fehlauer.jpg",
+        "serial_id": 86,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Fehlauer.jpg",
         "name": "Daniel Fehlauer",
         "title": "Upper School Faculty, Science; Assistant Coach, Boys' Varsity Soccer",
         "email": "dfehlauer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Gavin_Fitts.jpg",
+        "serial_id": 87,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Gavin_Fitts.jpg",
         "name": "Gavin Fitts",
         "title": "Middle School Boys' Dean of Students; Middle School Faculty, Math; Assistant Coach, Boys' Varsity Football",
         "email": "gfitts@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/Flannery_Kyle0825.jpg",
+        "serial_id": 88,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/Flannery_Kyle0825.jpg",
         "name": "Kyle Flannery",
         "title": "Associate Director of College Counseling",
         "email": "kflannery@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_Flaxman.jpg",
+        "serial_id": 89,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_Flaxman.jpg",
         "name": "David Flaxman",
         "title": "Upper School Faculty, Language",
         "email": "dflaxman@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/folan_peter0725.jpg",
+        "serial_id": 90,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/folan_peter0725.jpg",
         "name": "Peter Folan",
         "title": "Head of School",
         "email": "pfolan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Foley_Kaitlyn.jpg",
+        "serial_id": 91,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Foley_Kaitlyn.jpg",
         "name": "Kaitlyn Foley",
         "title": "Marketing & Communications Coordinator",
         "email": "kfoley@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Foster.jpg",
+        "serial_id": 92,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Foster.jpg",
         "name": "Lauren Foster",
         "title": "Upper School Faculty, Learning Specialist; Assistant Coach, Girls' Varsity Field Hockey",
         "email": "lfoster@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elizabeth_Frissora.jpg",
+        "serial_id": 93,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elizabeth_Frissora.jpg",
         "name": "Elizabeth \"Betsy\" Frissora",
         "title": "Upper School Faculty, History",
         "email": "efrissora@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Frederick_Fucci.jpg",
+        "serial_id": 94,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Frederick_Fucci.jpg",
         "name": "Frederick Fucci",
         "title": "Maintenance",
         "email": "ffucci@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/James_Fucci.jpg",
+        "serial_id": 95,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/James_Fucci.jpg",
         "name": "James Fucci",
         "title": "Grounds Supervisor",
         "email": "jfucci@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lindsey_Cunningham.jpg",
+        "serial_id": 96,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lindsey_Cunningham.jpg",
         "name": "Lindsey Gaglio",
         "title": "College Office Manager",
         "email": "lgaglio@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/GandelJennifer.jpg",
+        "serial_id": 97,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/GandelJennifer.jpg",
         "name": "Jennifer \"Jen\" Gandel",
         "title": "Athletics Faculty, Coach, Girls' Varsity Tennis",
         "email": "jgandel@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 98,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Brittany Garcia",
         "title": "Upper School Faculty, Music",
         "email": "bgarcia@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Heaney_Elizabeth.JPG",
+        "serial_id": 99,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Heaney_Elizabeth.JPG",
         "name": "Elizabeth Garfield",
         "title": "Lower and Middle School Faculty, Theatre",
         "email": "egarfield@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carla_Gates.jpg",
+        "serial_id": 100,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carla_Gates.jpg",
         "name": "Carla Gates",
         "title": "Controller",
         "email": "cgates@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Geraci.jpg",
+        "serial_id": 101,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Geraci.jpg",
         "name": "John Geraci",
         "title": "Coach, Girls' Varsity Golf",
         "email": "jgeraci@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 102,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Patrick Glennon",
         "title": "Teaching Assistant",
         "email": "pglennon@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Stephanie_Goff_Governali.jpg",
+        "serial_id": 103,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Stephanie_Goff_Governali.jpg",
         "name": "Stephanie Goff Governali",
         "title": "Director of External Relations and Chief Advancement Officer",
         "email": "sgovernali@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danielle_Gomez-Garcia.jpg",
+        "serial_id": 104,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danielle_Gomez-Garcia.jpg",
         "name": "Danielle Gomez-Garcia",
         "title": "Lower School Faculty, Boys' Kindergarten",
         "email": "dgomez-garcia@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/Gormley_Caoilinn0725.jpg",
+        "serial_id": 105,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/Gormley_Caoilinn0725.jpg",
         "name": "Caoilinn \"Caoilinn\" Gormley",
         "title": "Admissions Counselor",
         "email": "cgormley@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mary_Beth_Goulding.jpg",
+        "serial_id": 106,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mary_Beth_Goulding.jpg",
         "name": "Mary Beth Goulding",
         "title": "Strategic Sourcing Manager",
         "email": "mgoulding@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emilia_Guy.jpg",
+        "serial_id": 107,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emilia_Guy.jpg",
         "name": "Emilia Guy",
         "title": "Upper School Faculty, Science Department Chair, Director of the Center for Academic Innovation",
         "email": "eguy@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/HallTatiana.jpg",
+        "serial_id": 108,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/HallTatiana.jpg",
         "name": "Tatiana Hall",
         "title": "Transportation Manager",
         "email": "thall@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emma_Hallock.jpg",
+        "serial_id": 109,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emma_Hallock.jpg",
         "name": "Emma Hallock",
         "title": "Middle School Faculty, Math",
         "email": "ehallock@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catherine_Hamm.jpg",
+        "serial_id": 110,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catherine_Hamm.jpg",
         "name": "Catherine Hamm",
         "title": "Lower School Faculty, Girls' Class 3",
         "email": "chamm@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Hanewich.jpg",
+        "serial_id": 111,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ryan_Hanewich.jpg",
         "name": "Ryan Hanewich",
         "title": "Content Creator",
         "email": "rhanewich@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kimly_Hanlon.jpg",
+        "serial_id": 112,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kimly_Hanlon.jpg",
         "name": "Kimly \"Kim\" Hanlon",
         "title": "Lower School Faculty, Girls' Kindergarten",
         "email": "khanlon@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Philip_Harrington.jpg",
+        "serial_id": 113,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Philip_Harrington.jpg",
         "name": "Philip Harrington",
         "title": "Head of Campus Safety & Security",
         "email": "pharrington@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Henderson.jpg",
+        "serial_id": 114,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Henderson.jpg",
         "name": "Lauren Henderson",
         "title": "Director of Data Systems and Management",
         "email": "lhenderson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 115,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Emma Henson",
         "title": "Middle School Faculty, Humanities",
         "email": "ehenson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paige_Hilts.jpg",
+        "serial_id": 116,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paige_Hilts.jpg",
         "name": "Paige Hilts",
         "title": "Lower School Faculty, Girls' PreK",
         "email": "philts@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 117,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Carolyn Hornor",
         "title": "Lower School Faculty, Teaching Fellow",
         "email": "chornor@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ian_Hryniewicz.jpg",
+        "serial_id": 118,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Ian_Hryniewicz.jpg",
         "name": "Ian Hryniewicz",
         "title": "Maintenance",
         "email": "ihryniewicz@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elena_Hucko.jpg",
+        "serial_id": 119,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elena_Hucko.jpg",
         "name": "Elena Hucko",
         "title": "Assistant Director of Human Resources",
         "email": "ehucko@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Hwang.jpg",
+        "serial_id": 120,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Hwang.jpg",
         "name": "Sarah Hwang",
         "title": "Middle School Faculty, Math",
         "email": "shwang@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lisa_Jassie.jpg",
+        "serial_id": 121,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lisa_Jassie.jpg",
         "name": "Lisa Jassie",
         "title": "Upper School Dean of Academics; Upper School Faculty, Language",
         "email": "ljassie@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 122,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Elton Jazexhiu",
         "title": "Coach, Boys' Varsity Soccer",
         "email": "ejazexhiu@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jean_PhilippeSemble.jpg",
+        "serial_id": 123,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jean_PhilippeSemble.jpg",
         "name": "Semble Jean-Philippe",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Jenkins.jpg",
+        "serial_id": 124,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Jenkins.jpg",
         "name": "Lauren Jenkins",
         "title": "Associate Director of Admissions; Coach, Girls' Varsity Soccer",
         "email": "ljenkins@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Johnson_Morgan.JPG",
+        "serial_id": 125,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Johnson_Morgan.JPG",
         "name": "Morgan Johnson",
         "title": "Associate Director of Admissions",
         "email": "mjohnson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/JonesTerrence.jpg",
+        "serial_id": 126,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/JonesTerrence.jpg",
         "name": "Terrence Jones",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Joseph_Jean-Daniel.JPG",
+        "serial_id": 127,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Joseph_Jean-Daniel.JPG",
         "name": "Jean-Daniel Joseph",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Juste_Jackson.JPG",
+        "serial_id": 128,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Juste_Jackson.JPG",
         "name": "Jackson Juste",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/William_Keating.jpg",
+        "serial_id": 129,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/William_Keating.jpg",
         "name": "William Keating",
         "title": "Middle School Faculty, Teaching Fellow",
         "email": "wkeating@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Kelliher.jpg",
+        "serial_id": 130,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Kelliher.jpg",
         "name": "Michael Kelliher",
         "title": "Facilities Lead Supervisor",
         "email": "mkelliher@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danielle_Kent.jpg",
+        "serial_id": 131,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danielle_Kent.jpg",
         "name": "Danielle Kent",
         "title": "Upper School Faculty, Learning Specialist",
         "email": "dkent@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 132,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Matthew Kettlewell",
         "title": "Middle School Faculty, Teaching Fellow",
         "email": "mkettlewell@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Kibrick.jpg",
+        "serial_id": 133,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Kibrick.jpg",
         "name": "John Kibrick",
         "title": "Maintenance",
         "email": "jkibrick@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elizabeth_Koehler.jpg",
+        "serial_id": 134,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Elizabeth_Koehler.jpg",
         "name": "Elizabeth Koehler",
         "title": "Upper School Faculty, English",
         "email": "bkoehler@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kimberly_Kolaric.jpg",
+        "serial_id": 135,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kimberly_Kolaric.jpg",
         "name": "Kimberly Kolaric",
         "title": "Lower School Faculty, Boys' Class 1",
         "email": "kkolaric@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Heather_Kolva.jpg",
+        "serial_id": 136,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Heather_Kolva.jpg",
         "name": "Heather Kolva",
         "title": "Lower School Faculty, Boys' Class 3",
         "email": "hkolva@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jeffrey_Kolva.jpg",
+        "serial_id": 137,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jeffrey_Kolva.jpg",
         "name": "Jeffrey \"Jeff\" Kolva",
         "title": "Lower School Faculty, Boys' Class 5",
         "email": "jkolva@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sean_Lafferty.jpg",
+        "serial_id": 138,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sean_Lafferty.jpg",
         "name": "Sean Lafferty",
         "title": "Upper School Faculty, Language",
         "email": "slafferty@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/LagorSamuel.jpg",
+        "serial_id": 139,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/LagorSamuel.jpg",
         "name": "Samuel Lagor",
         "title": "Middle School Faculty, Science Department Chair",
         "email": "slagor@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_LaRochelle.jpg",
+        "serial_id": 140,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_LaRochelle.jpg",
         "name": "Brian LaRochelle",
         "title": "Director of College Counseling, Assistant Coach, Boys' Varsity Baseball",
         "email": "blarochelle@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/LassondeMelissa.jpg",
+        "serial_id": 141,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/LassondeMelissa.jpg",
         "name": "Melissa Lassonde",
         "title": "Coach, Girls' Varsity Softball",
         "email": "mlassonde@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 142,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Sloane Latimer",
         "title": "Lower School Faculty; Teaching Assistant;",
         "email": "slatimer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Lauranzano.jpg",
+        "serial_id": 143,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Matthew_Lauranzano.jpg",
         "name": "Matthew Lauranzano",
         "title": "Middle School Dean of Academics",
         "email": "mlauranzano@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Morgan_Lauvray.jpg",
+        "serial_id": 144,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Morgan_Lauvray.jpg",
         "name": "Morgan Lauvray",
         "title": "Girls' Varsity Volleyball Coach",
         "email": "mlauvray@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rory_Lavin.jpg",
+        "serial_id": 145,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rory_Lavin.jpg",
         "name": "Rory Lavin",
         "title": "Middle School Faculty, Math and Science",
         "email": "rlavin@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Wendy_Lawless.jpg",
+        "serial_id": 146,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Wendy_Lawless.jpg",
         "name": "Wendy Lawless",
         "title": "Operations & Events Coordinator",
         "email": "wlawless@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mary_Jessica_Lawrence.jpg",
+        "serial_id": 147,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mary_Jessica_Lawrence.jpg",
         "name": "Mary Jessica \"Jessica\" Lawrence",
         "title": "Upper School Faculty, English",
         "email": "jlawrence@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Susannah_Lawrence.jpg",
+        "serial_id": 148,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Susannah_Lawrence.jpg",
         "name": "Susannah Lawrence",
         "title": "Middle School Faculty, Visual Arts",
         "email": "slawrence@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/LeBorgne_Laura0825.jpg",
+        "serial_id": 149,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/LeBorgne_Laura0825.jpg",
         "name": "Laura LeBorgne",
         "title": "School Nurse",
         "email": "lleborgne@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Lee_Mark.JPG",
+        "serial_id": 150,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Lee_Mark.JPG",
         "name": "Mark Lee",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Thomas_Lee.jpg",
+        "serial_id": 151,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Thomas_Lee.jpg",
         "name": "Thomas Lee",
         "title": "Upper School Faculty, Math",
         "email": "tlee@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Johanna_Leitsinger.jpg",
+        "serial_id": 152,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Johanna_Leitsinger.jpg",
         "name": "Johanna Leitsinger",
         "title": "Middle School Faculty, English Department Chair, Secondary School Application Coordinator",
         "email": "jleitsinger@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicola_Lewin.jpg",
+        "serial_id": 153,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicola_Lewin.jpg",
         "name": "Nicola Lewin",
         "title": "Lower School Faculty, Boys' Class 3",
         "email": "nlewin@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Liston_Benjamin.jpg",
+        "serial_id": 154,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Liston_Benjamin.jpg",
         "name": "Benjamin Liston",
         "title": "School Counseling",
         "email": "bliston@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Patrick_Logan.jpg",
+        "serial_id": 155,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Patrick_Logan.jpg",
         "name": "Patrick Logan",
         "title": "Middle School Faculty, English",
         "email": "plogan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julia_Lothrop.jpg",
+        "serial_id": 156,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Julia_Lothrop.jpg",
         "name": "Julia Lothrop",
         "title": "Upper School Faculty, Visual Arts",
         "email": "jlothrop@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tyler-Gary_Louis.jpg",
+        "serial_id": 157,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tyler-Gary_Louis.jpg",
         "name": "Tyler-Gary Louis",
         "title": "Middle School Faculty, Teaching Fellow",
         "email": "tlouis@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Louis_Yves.JPG",
+        "serial_id": 158,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Louis_Yves.JPG",
         "name": "Yves Louis",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Clampitch_Louissaint2.jpg",
+        "serial_id": 159,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Clampitch_Louissaint2.jpg",
         "name": "Clampitch Louissaint",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Courtney_Luongo.jpg",
+        "serial_id": 160,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Courtney_Luongo.jpg",
         "name": "Courtney Luongo",
         "title": "Director of Development",
         "email": "cluongo@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anette_Macintire.jpg",
+        "serial_id": 161,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anette_Macintire.jpg",
         "name": "Anette Macintire",
         "title": "Director of Advancement Services",
         "email": "amacintire@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Madden.jpg",
+        "serial_id": 162,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Madden.jpg",
         "name": "Samantha Madden",
         "title": "Upper School Faculty, English",
         "email": "smadden@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rebecca_Magill.jpg",
+        "serial_id": 163,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Rebecca_Magill.jpg",
         "name": "Rebecca Magill",
         "title": "Lower School Faculty, Visual Arts",
         "email": "rmagill@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Drew_Maletz.jpg",
+        "serial_id": 164,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Drew_Maletz.jpg",
         "name": "Drew Maletz",
         "title": "Upper School Faculty, Performing Arts",
         "email": "dmaletz@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 165,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Jose Mancia",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Claudia_Marceau.jpg",
+        "serial_id": 166,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Claudia_Marceau.jpg",
         "name": "Claudia Marceau",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/April_Martin.jpg",
+        "serial_id": 167,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/April_Martin.jpg",
         "name": "April Martin",
         "title": "Lower School Faculty, Girls' Kindergarten",
         "email": "amartin@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Deirdre_Martin.jpg",
+        "serial_id": 168,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Deirdre_Martin.jpg",
         "name": "Deirdre Martin",
         "title": "Upper School Faculty, History Department Chair",
         "email": "dmartin@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Joseph_Martin.jpg",
+        "serial_id": 169,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Joseph_Martin.jpg",
         "name": "Joseph Martin",
         "title": "Upper School Faculty, History; Assistant Coach, Boys' Varsity Rowing",
         "email": "jomartin@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nora_Massoc.jpg",
+        "serial_id": 170,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nora_Massoc.jpg",
         "name": "Nora Massoc",
         "title": "Upper School Faculty, Language",
         "email": "nmassoc@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 171,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Lauren Mauretti",
         "title": "Upper School Faculty, Chemistry",
         "email": "lmauretti@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_McCarthy.jpg",
+        "serial_id": 172,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/David_McCarthy.jpg",
         "name": "David McCarthy",
         "title": "Upper School Faculty, Math",
         "email": "dmccarthy@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_McColgan.jpg",
+        "serial_id": 173,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_McColgan.jpg",
         "name": "Brian McColgan",
         "title": "Director of Athletic Operations, Assistant Coach, Boys' Varsity Ice Hockey",
         "email": "bmccolgan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tricia_McCool.jpg",
+        "serial_id": 174,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tricia_McCool.jpg",
         "name": "Tricia McCool",
         "title": "Lower School Faculty, Teaching Assistant",
         "email": "tmccool@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/McKusker_Cameron0725.jpg",
+        "serial_id": 175,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2025-2026_Directory/McKusker_Cameron0725.jpg",
         "name": "Cameron McCusker",
         "title": "Associate Director of Admissions",
         "email": "cmccusker@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lynne_McEwen.jpg",
+        "serial_id": 176,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lynne_McEwen.jpg",
         "name": "Lynne McEwen",
         "title": "Lower School Faculty, Art and Book Nook",
         "email": "lmcewen@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/McLean_Kevin.JPG",
+        "serial_id": 177,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/McLean_Kevin.JPG",
         "name": "Kevin McLean",
         "title": "Auxiliary Program Coordinator; Director of Summer Camps, Assistant Coach, Girls' Varsity Basketball",
         "email": "kmclean@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Abigail_Meachem.jpg",
+        "serial_id": 178,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Abigail_Meachem.jpg",
         "name": "Abigail \"Abby\" Meachem",
         "title": "Director of Alumni and Parent Relations",
         "email": "ameachem@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Medeiros_Doug.JPG",
+        "serial_id": 179,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Medeiros_Doug.JPG",
         "name": "Douglas Medeiros",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alexander_Melanson.jpg",
+        "serial_id": 180,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alexander_Melanson.jpg",
         "name": "Alexander Melanson",
         "title": "Chief Financial Officer",
         "email": "amelanson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anthony_Meo.jpg",
+        "serial_id": 181,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Anthony_Meo.jpg",
         "name": "Anthony Meo",
         "title": "Facilities Technician, Assistant Coach, Boys' Varsity Baseball",
         "email": "ameo@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sergio_Merida.jpg",
+        "serial_id": 182,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sergio_Merida.jpg",
         "name": "Sergio Merida",
         "title": "Buildings Supervisor",
         "email": "smerida@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Madeline_Metcalf.jpg",
+        "serial_id": 183,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Madeline_Metcalf.jpg",
         "name": "Madeline Metcalf",
         "title": "Alumni Leadership Gifts Officer",
         "email": "mmetcalf@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicole_Migliozzi.jpg",
+        "serial_id": 184,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicole_Migliozzi.jpg",
         "name": "Nicole Migliozzi",
         "title": "Leadership Gift Officer",
         "email": "nmigliozzi@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 185,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Barbara Mikolajczak",
         "title": "Lower School Faculty, Computer and Technology",
         "email": "bmikolajczak@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amber_Miller.jpg",
+        "serial_id": 186,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amber_Miller.jpg",
         "name": "Amber Miller",
         "title": "Athletics Faculty, Assistant Strength and Conditioning Coach",
         "email": "amiller@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Bradley_Miller.jpg",
+        "serial_id": 187,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Bradley_Miller.jpg",
         "name": "Bradley Miller",
         "title": "Admissions Coordinator",
         "email": "bmiller@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 188,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Isabelle Miller",
         "title": "Lower School Faculty, Teaching Fellow",
         "email": "imiller@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/MillerJulie.jpg",
+        "serial_id": 189,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/MillerJulie.jpg",
         "name": "Julie Miller",
         "title": "Lower School Faculty, Learning Specialist",
         "email": "jmiller@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 190,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Tammy Millsaps",
         "title": "Athletics Faculty, Coach, Girls' Varsity Basketball",
         "email": "tmillsaps@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kate_Monahan.jpg",
+        "serial_id": 191,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kate_Monahan.jpg",
         "name": "Kate Monahan",
         "title": "Lower School Faculty, Girls' Class 1",
         "email": "kmonahan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lex_Mongo.jpg",
+        "serial_id": 192,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lex_Mongo.jpg",
         "name": "Lex Mongo",
         "title": "Athletics Faculty",
         "email": "lmongo@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/William_Moody.jpg",
+        "serial_id": 193,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/William_Moody.jpg",
         "name": "William Moody",
         "title": "Middle School Faculty, English",
         "email": "wmoody@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emily_Moore.jpg",
+        "serial_id": 194,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Emily_Moore.jpg",
         "name": "Emily Moore",
         "title": "Lower School Faculty, Girls' Class 1",
         "email": "emoore@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Leslie_Morgan.jpg",
+        "serial_id": 195,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Leslie_Morgan.jpg",
         "name": "Leslie Morgan",
         "title": "Upper School Faculty, English",
         "email": "lmorgan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Morrill.jpg",
+        "serial_id": 196,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/John_Morrill.jpg",
         "name": "John \"Jack\" Morrill",
         "title": "Lower School Faculty, Boys' Kindergarten",
         "email": "jmorrill@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tyreik_Mosley.jpg",
+        "serial_id": 197,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Tyreik_Mosley.jpg",
         "name": "Tyreik Mosley",
         "title": "Upper School Faculty, Campus Assistant, Assistant Coach, Girls' Varsity Basketball",
         "email": "tmosley@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Murphy.jpg",
+        "serial_id": 198,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Murphy.jpg",
         "name": "Daniel \"Dan\" Murphy",
         "title": "IT Support Specialist",
         "email": "dmurphy@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hongyu_Murray.jpg",
+        "serial_id": 199,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hongyu_Murray.jpg",
         "name": "Hongyu Murray",
         "title": "Assistant Controller",
         "email": "hmurray@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christina_Myers.jpg",
+        "serial_id": 200,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christina_Myers.jpg",
         "name": "Christina Myers",
         "title": "Upper School Administrative Coordinator",
         "email": "cmyers@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alfred_Navarrete.jpg",
+        "serial_id": 201,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alfred_Navarrete.jpg",
         "name": "Alfred Navarrete",
         "title": "Upper School Faculty, Science",
         "email": "anavarrete@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christopher_Newton.jpg",
+        "serial_id": 202,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christopher_Newton.jpg",
         "name": "Christopher Newton",
         "title": "Library Resource Specialist",
         "email": "cnewton@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 203,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Lucy Noel",
         "title": "Lower School Faculty, Girls' Class 5",
         "email": "lnoel@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Bethany_Nunes.jpg",
+        "serial_id": 204,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Bethany_Nunes.jpg",
         "name": "Bethany Nunes",
         "title": "Upper School Faculty, Learning Specialist",
         "email": "bnunes@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 205,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Andrew O'Brien",
         "title": "Upper School Faculty, Math",
         "email": "aobrien@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/O'Neil_Lily.jpg",
+        "serial_id": 206,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/O'Neil_Lily.jpg",
         "name": "Lily \"Lily\" O'Neil",
         "title": "School Counseling Intern",
         "email": "loneil@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jessica_Oplinger.jpg",
+        "serial_id": 207,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jessica_Oplinger.jpg",
         "name": "Jessica Oplinger",
         "title": "Lower School Faculty, Learning Specialist",
         "email": "joplinger@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_Owens.jpg",
+        "serial_id": 208,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Brian_Owens.jpg",
         "name": "Brian Owens",
         "title": "Associate Director of Admissions",
         "email": "bowens@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Basant_Pangeni.jpg",
+        "serial_id": 209,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Basant_Pangeni.jpg",
         "name": "Basant Pangeni",
         "title": "Upper School Faculty, Math",
         "email": "bpangeni@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Payne.jpg",
+        "serial_id": 210,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Payne.jpg",
         "name": "Samantha Payne",
         "title": "Lower School Faculty, Boys' Class 2",
         "email": "spayne@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paul_Pearl.jpg",
+        "serial_id": 211,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Paul_Pearl.jpg",
         "name": "Paul Pearl",
         "title": "Director of Athletics",
         "email": "ppearl@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 212,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Timothy Pesek",
         "title": "Lower School Faculty, Teaching Fellow",
         "email": "tpesek@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sydney_Peterson.jpg",
+        "serial_id": 213,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sydney_Peterson.jpg",
         "name": "Sydney \"Kramer\" Peterson",
         "title": "Upper School Faculty, Science; Varsity Coach, Boys' and Girls' Cross Country",
         "email": "kpeterson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Janet_PetitBon.jpg",
+        "serial_id": 214,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Janet_PetitBon.jpg",
         "name": "Janet PetitBon",
         "title": "Upper School Faculty, Performing Arts Department Chair",
         "email": "jpetitbon@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danny_Plaza.jpg",
+        "serial_id": 215,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Danny_Plaza.jpg",
         "name": "Danny Plaza",
         "title": "Facilities Technician",
         "email": "dplaza@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alun_Polga.jpg",
+        "serial_id": 216,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Alun_Polga.jpg",
         "name": "Alun Polga",
         "title": "Upper School Dean of Students; Upper School Faculty, English",
         "email": "apolga@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Allison_Singer.jpg",
+        "serial_id": 217,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Allison_Singer.jpg",
         "name": "Allison \"Allie\" Powell",
         "title": "Assistant Director of Summer Programs",
         "email": "apowell@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sara_Pozner.jpg",
+        "serial_id": 218,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sara_Pozner.jpg",
         "name": "Sara Pozner",
         "title": "Head of Health Services",
         "email": "spozner@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Przybysz_Nathan.JPG",
+        "serial_id": 219,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Przybysz_Nathan.JPG",
         "name": "Nathaniel Przybysz",
         "title": "Dining Services, Executive Chef",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amanda_Purcell.jpg",
+        "serial_id": 220,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Amanda_Purcell.jpg",
         "name": "Amanda Purcell",
         "title": "Middle School Faculty, English",
         "email": "apurcell@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Natalia_Ramey_Doe.jpg",
+        "serial_id": 221,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Natalia_Ramey_Doe.jpg",
         "name": "Natalia Ramey Doe",
         "title": "Assistant Registrar",
         "email": "nrameydoe@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Allison_Ranz.jpg",
+        "serial_id": 222,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Allison_Ranz.jpg",
         "name": "Allison Ranz",
         "title": "Senior Associate Director of College Counseling",
         "email": "aranz@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 223,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Andrew Raycroft",
         "title": "Athletics Faculty, Coach, Boys' and Girls' Ice Hockey; Assistant Coach, Boys' Varsity Hockey",
         "email": "araycroft@hotmail.com"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michaela_Reale.jpg",
+        "serial_id": 224,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michaela_Reale.jpg",
         "name": "Michaela Reale",
         "title": "Director of School Counseling",
         "email": "mreale@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 225,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Mia Richter",
         "title": "Upper School Faculty, Teaching Fellow",
         "email": "mrichter@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Roberts.jpg",
+        "serial_id": 226,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Roberts.jpg",
         "name": "Daniel \"Dan\" Roberts",
         "title": "Athletics Faculty, Director of Squash, Coach, Boys' and Girls' Varsity Squash",
         "email": "droberts@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hannah_Rolighed.jpg",
+        "serial_id": 227,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hannah_Rolighed.jpg",
         "name": "Hannah Rolighed",
         "title": "School Counseling and Admissions",
         "email": "hrolighed@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Rostami_Abdul.JPG",
+        "serial_id": 228,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Rostami_Abdul.JPG",
         "name": "Abdul Rostami",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jaclyn_Rothenburg.jpg",
+        "serial_id": 229,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jaclyn_Rothenburg.jpg",
         "name": "Jaclyn Rothenberg",
         "title": "Athletics Faculty, Volleyball Coach",
         "email": "jrothenberg@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Karina_Ruiz.jpg",
+        "serial_id": 230,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Karina_Ruiz.jpg",
         "name": "Karina Ruiz",
         "title": "Upper School Faculty, Language",
         "email": "kruiz@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kristen_Ryan.jpg",
+        "serial_id": 231,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kristen_Ryan.jpg",
         "name": "Kristen Ryan",
         "title": "Lower School Faculty, Girls' Class 4",
         "email": "kryan@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sami_Saba.jpg",
+        "serial_id": 232,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sami_Saba.jpg",
         "name": "Sami Saba",
         "title": "Facilities Technician",
         "email": "ssaba@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jesus_Sanchez_Jaramillo.jpg",
+        "serial_id": 233,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jesus_Sanchez_Jaramillo.jpg",
         "name": "Jesus Sanchez Jaramillo",
         "title": "Upper School Faculty, Science; Assistant Coach, Boys' Varsity Squash and Girls' Varsity Tennis",
         "email": "jsanchez@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Santiago_Adrian.JPG",
+        "serial_id": 234,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Santiago_Adrian.JPG",
         "name": "Adrian Santiago",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Felipe_Santos.jpg",
+        "serial_id": 235,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Felipe_Santos.jpg",
         "name": "Felipe Santos",
         "title": "Observatory and Docent Program Director",
         "email": "fsantos@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Scarlata.jpg",
+        "serial_id": 236,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Scarlata.jpg",
         "name": "Michael Scarlata",
         "title": "Middle School Faculty, History Department Chair",
         "email": "mscarlata@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Colin_Schafer.jpg",
+        "serial_id": 237,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Colin_Schafer.jpg",
         "name": "Colin Schafer",
         "title": "Upper School Faculty, Math Department Chair",
         "email": "cschafer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jamie_Scherzer.jpg",
+        "serial_id": 238,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jamie_Scherzer.jpg",
         "name": "Jamie Scherzer",
         "title": "Middle School Faculty, Visual Arts",
         "email": "jscherzer@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jessica_Schofield.jpg",
+        "serial_id": 239,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jessica_Schofield.jpg",
         "name": "Jessica Schofield",
         "title": "Upper School Faculty, Language",
         "email": "jschofield@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Trevor_Schofield.jpg",
+        "serial_id": 240,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Trevor_Schofield.jpg",
         "name": "Trevor Schofield",
         "title": "Lower School Faculty, Boys' Class 5, Assistant Coach, Girls' Varsity Volleyball",
         "email": "tschofield@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Grace_Schwartz.jpg",
+        "serial_id": 241,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Grace_Schwartz.jpg",
         "name": "Grace Schwartz",
         "title": "Lower School Faculty, Teaching Fellow",
         "email": "gschwartz@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/Green_Resized/STA_STA_SESSA_PETER.jpg",
+        "serial_id": 242,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/Green_Resized/STA_STA_SESSA_PETER.jpg",
         "name": "Peter Sessa",
         "title": "Coach, Boys' Varsity Lacrosse",
         "email": "psessa@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Justin_Shaberly.jpg",
+        "serial_id": 243,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Justin_Shaberly.jpg",
         "name": "Justin Shaberly",
         "title": "Upper School Faculty, History",
         "email": "jshaberly@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Steven_Shulman.jpg",
+        "serial_id": 244,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Steven_Shulman.jpg",
         "name": "Steven Shulman",
         "title": "Lower School Faculty, Campus Assistant",
         "email": "sshulman@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Austin_Shute.jpg",
+        "serial_id": 245,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Austin_Shute.jpg",
         "name": "Austin Shute",
         "title": "Facilities Technician",
         "email": "ashute@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelly_Sicchitano.jpg",
+        "serial_id": 246,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelly_Sicchitano.jpg",
         "name": "Kelly Sicchitano",
         "title": "Lower School Faculty, Girls' Class 3",
         "email": "ksicchitano@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Denise_Silva.jpg",
+        "serial_id": 247,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Denise_Silva.jpg",
         "name": "Denise Silva",
         "title": "School Nurse",
         "email": "dsilva@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 248,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Angela Silvi",
         "title": "School Counseling Intern",
         "email": "asilvi@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Simon_Marlene.JPG",
+        "serial_id": 249,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Simon_Marlene.JPG",
         "name": "Marlene Simon",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicholas_Sirianno.jpg",
+        "serial_id": 250,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicholas_Sirianno.jpg",
         "name": "Nicholas Sirianno",
         "title": "Upper School Faculty, English; Coach, Boys' and Girls' Varsity Track and Field",
         "email": "nsirianno@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 251,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Nicholas Sorabella",
         "title": "Upper School Faculty, Physics",
         "email": "nsorabella@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/SoucieBrendan.jpg",
+        "serial_id": 252,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/SoucieBrendan.jpg",
         "name": "Brendan Soucie",
         "title": "Middle School Faculty, Teaching Fellow",
         "email": "bsoucie@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scott_Souza.jpg",
+        "serial_id": 253,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Scott_Souza.jpg",
         "name": "Scott Souza",
         "title": "Middle School Faculty, Science; Garage Innovation Coordinator",
         "email": "ssouza@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Abigail_Spaeth.jpg",
+        "serial_id": 254,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Abigail_Spaeth.jpg",
         "name": "Abigail Spaeth",
         "title": "Middle School Faculty, English",
         "email": "aspaeth@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 255,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Ross St. Onge",
         "title": "Athletics Faculty, Strength and Conditioning Coach",
         "email": "rstonge@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catherine_Stanton.jpg",
+        "serial_id": 256,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Catherine_Stanton.jpg",
         "name": "Catherine \"Katy\" Stanton",
         "title": "Lower School Faculty, Boys' PreK",
         "email": "cstanton@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kendra_Stanton_Lee.jpg",
+        "serial_id": 257,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kendra_Stanton_Lee.jpg",
         "name": "Kendra Stanton Lee",
         "title": "Upper School Faculty, English",
         "email": "kstantonlee@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Stevens.jpg",
+        "serial_id": 258,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniel_Stevens.jpg",
         "name": "Daniel Stevens",
         "title": "Upper School Faculty, Science",
         "email": "dstevens@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jane_Stevenson.jpg",
+        "serial_id": 259,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Jane_Stevenson.jpg",
         "name": "Jane Stevenson",
         "title": "Lower School Faculty, Girls' Class 5",
         "email": "jstevenson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kevin_Stone.jpg",
+        "serial_id": 260,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kevin_Stone.jpg",
         "name": "Kevin Stone",
         "title": "Middle School Faculty, Math",
         "email": "kstone@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 261,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Evan Strouse",
         "title": "Lower School Faculty, Music, Music",
         "email": "estrouse@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Maggie_Taverna.jpg",
+        "serial_id": 262,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Maggie_Taverna.jpg",
         "name": "Maggie Taverna",
         "title": "Athletics Faculty, Coach, Girls' Varsity Ice Hockey; Assistant Coach, Girls' Varsity Cross Country",
         "email": "mtaverna@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Taylor.jpg",
+        "serial_id": 263,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Samantha_Taylor.jpg",
         "name": "Samantha Taylor",
         "title": "Senior Associate Director of Admissions and College Academic Coordinator, Coach, Girls' Varsity Lacrosse",
         "email": "staylor@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Stephanie_Teixeira-Yim.jpg",
+        "serial_id": 264,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Stephanie_Teixeira-Yim.jpg",
         "name": "Stephanie Teixeira-Yim",
         "title": "Executive Assistant to the Head of School",
         "email": "steixeira@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Donald_Thomas.jpg",
+        "serial_id": 265,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Donald_Thomas.jpg",
         "name": "Donald Thomas",
         "title": "Middle and Lower School Faculty, Woodshop",
         "email": "dthomas@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Chad_Thompson.jpg",
+        "serial_id": 266,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Chad_Thompson.jpg",
         "name": "Chad Thompson",
         "title": "Assistant Head of Lower School",
         "email": "cthompson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Reginald_Thors.jpg",
+        "serial_id": 267,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Reginald_Thors.jpg",
         "name": "Reginald Thors",
         "title": "Upper School Faculty, History",
         "email": "rthors@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 268,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Azeo Torre",
         "title": "Middle School Faculty, Science",
         "email": "atorre@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Tucker_Molly.JPG",
+        "serial_id": 269,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Tucker_Molly.JPG",
         "name": "Mary \"Molly\" Tucker",
         "title": "Upper School Faculty, English; Scholars Instructor; Assistant Coach, Girls' Varsity Track and Field",
         "email": "mtucker@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 270,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Sara Udell",
         "title": "Lower School Administrative Coordinator",
         "email": "sudell@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniela_Urencio.jpg",
+        "serial_id": 271,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Daniela_Urencio.jpg",
         "name": "Daniela Urencio",
         "title": "Lower School Faculty, Language",
         "email": "durencio@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Robert_Valiante.jpg",
+        "serial_id": 272,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Robert_Valiante.jpg",
         "name": "Robert Valiante",
         "title": "Maintenance",
         "email": "rvaliante@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 273,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Laurel Vartabedian",
         "title": "Upper School Faculty, Teaching Fellow",
         "email": "lvartabedian@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Meredith_Vlachos.jpg",
+        "serial_id": 274,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Meredith_Vlachos.jpg",
         "name": "Meredith Vlachos",
         "title": "Lower School Faculty, Girls' PreK",
         "email": "mvlachos@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Wahl.jpg",
+        "serial_id": 275,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Michael_Wahl.jpg",
         "name": "Michael Wahl",
         "title": "Middle School Faculty, History",
         "email": "mwahl@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Moira_Walsh.jpg",
+        "serial_id": 276,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Moira_Walsh.jpg",
         "name": "Moira Walsh",
         "title": "Director of Financial Aid and Associate Director of Admissions",
         "email": "mowalsh@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mondakini_Walsh.jpg",
+        "serial_id": 277,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Mondakini_Walsh.jpg",
         "name": "Mondakini \"Marie\" Walsh",
         "title": "Middle School Faculty, Learning Specialist",
         "email": "mwalsh@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2021_Low-Res/Wang_JuJu.jpg",
+        "serial_id": 278,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2021_Low-Res/Wang_JuJu.jpg",
         "name": "Ju Ju Wang",
         "title": "Human Resources Generalist",
         "email": "jwang@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carolyn_Warner.jpg",
+        "serial_id": 279,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Carolyn_Warner.jpg",
         "name": "Carolyn Warner",
         "title": "Upper School Faculty, Math; Assistant Coach, Boys' and Girls' Varsity Swimming",
         "email": "cwarner@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Evan_Warns.jpg",
+        "serial_id": 280,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Evan_Warns.jpg",
         "name": "Evan Warns",
         "title": "Upper School Faculty, Science; Assistant Coach, Boys' Varsity Track and Field",
         "email": "ewarns@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Timothy_Watrous.jpg",
+        "serial_id": 281,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Timothy_Watrous.jpg",
         "name": "Timothy Watrous",
         "title": "Lower, Middle and Upper School Faculty, Music",
         "email": "twatrous@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hilary_Watts.jpg",
+        "serial_id": 282,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Hilary_Watts.jpg",
         "name": "Hilary Watts",
         "title": "Lower School Faculty, Boys' Class 2",
         "email": "hwatts@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Megan_Weber.jpg",
+        "serial_id": 283,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Megan_Weber.jpg",
         "name": "Megan Weber",
         "title": "Lower School Faculty, Boys' Class 1",
         "email": "mweber@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Webster.jpg",
+        "serial_id": 284,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Sarah_Webster.jpg",
         "name": "Sarah Webster",
         "title": "Upper School Faculty, Teaching Fellow",
         "email": "swebster@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Dean_Weeden.jpg",
+        "serial_id": 285,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Dean_Weeden.jpg",
         "name": "Dean Weeden",
         "title": "Data Coordinator",
         "email": "dweeden@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Max_Weinstein.jpg",
+        "serial_id": 286,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Max_Weinstein.jpg",
         "name": "Max Weinstein",
         "title": "Middle School Faculty, Science",
         "email": "mweinstein@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicholas_White.jpg",
+        "serial_id": 287,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Nicholas_White.jpg",
         "name": "Nicholas White",
         "title": "Upper School Faculty, History; Assistant Coach, Boys' Varsity Football and Boys' Varsity Baseball",
         "email": "nwhite@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Edward_Williams.jpg",
+        "serial_id": 288,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Edward_Williams.jpg",
         "name": "Edward \"Ted\" Williams",
         "title": "Upper School Faculty, History; Student Activities Coordinator",
         "email": "ewilliams@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kinnon_Williamson.jpg",
+        "serial_id": 289,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kinnon_Williamson.jpg",
         "name": "Kinnon Williamson",
         "title": "Admissions Liaison",
         "email": "kwilliamson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Scott_Wilson2.jpg",
+        "serial_id": 290,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Scott_Wilson2.jpg",
         "name": "Scott Wilson",
         "title": "Dining Services",
         "email": null
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Zachary_Wilson.jpg",
+        "serial_id": 291,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Zachary_Wilson.jpg",
         "name": "Zachary Wilson",
         "title": "Lower School Faculty, Boys' Class 4",
         "email": "zwilson@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
+        "serial_id": 292,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/FacDirectory-Shield.jpg",
         "name": "Margaret Winters",
         "title": "Upper School Faculty, Teaching Fellow",
         "email": "mwinters@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christopher_Wisdom.jpg",
+        "serial_id": 293,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Christopher_Wisdom.jpg",
         "name": "Christopher Wisdom",
         "title": "Middle School Faculty, Math Department Chair",
         "email": "cwisdom@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Worthy.jpg",
+        "serial_id": 294,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Lauren_Worthy.jpg",
         "name": "Lauren Worthy",
         "title": "Lower School Faculty, Curriculum Coordinator",
         "email": "lworthy@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Yetman_Ann.JPG",
+        "serial_id": 295,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2023-24_Faculty_Staff/Yetman_Ann.JPG",
         "name": "Ann Yetman",
         "title": "Front Office Coordinator",
         "email": "ayetman@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/ZinnantiAndrew.jpg",
+        "serial_id": 296,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/ZinnantiAndrew.jpg",
         "name": "Andrew Zinnanti",
         "title": "Onsite Facilities Coordinator",
         "email": "azinnanti@dextersouthfield.org"
     },
     {
-        "photo": "https://www.dextersouthfield.orghttps://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsy_Zinnanti.jpg",
+        "serial_id": 297,
+        "photo": "https://www.dextersouthfield.org/uploaded/faculty/2024-2025_directory/Kelsy_Zinnanti.jpg",
         "name": "Kelsy Zinnanti",
         "title": "Assistant Director of Events",
         "email": "kzinnanti@dextersouthfield.org"
