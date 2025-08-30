@@ -167,16 +167,21 @@ def logout():
     session.pop('user', None)
     return redirect('/')
 
+@app.route('/student_portal')
+@user_required
+def student_portal(user, student):
+    return render_template('student_portal.html', student=student)
+
 @app.route('/student_portal/form', methods=['GET', 'POST'])
 @user_required
 def form(user, student):
     in_school = request.args.get('in_school')
     return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
 
-@app.route('/student_portal')
+@app.route('/student_portal/events')
 @user_required
-def student_portal(user, student):
-    return render_template('student_portal.html', student=student)
+def events(user, student):
+    return render_template('events.html')
 
 @app.route('/admin_portal')
 @user_required

@@ -8,14 +8,6 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Oswald', sans-serif;
         }
-        .header-text {
-            color: #002d5b;
-        }
-        .form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
         .form-group {
             margin-bottom: 1rem;
         }
@@ -119,118 +111,117 @@
             color: white;
             cursor: pointer;
         }
+        .file-input {
+            margin-top: 5px;
+        }
     </style>
 {% endblock %}
 {% block body %}
-    <div class="form-container">
-        <form method="post">
-            {% if in_school == "true" %}
-                <h1 class="text-center header-text">In-School Community Service Form</h1>
-            {% elif in_school == "false" %}
-                <h1 class="text-center header-text">Out-of-School Community Service Form</h1>
-            {% endif %}
-            <div class="form-group">
-                <label>Name</label>
-                <div class="name-container">
-                    <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" value="{{ student.user.first_name }}" required>
-                    <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" value="{{ student.user.last_name }}" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="graduation_year">Graduation Year</label>
-                <select name="graduation_year" id="graduation_year" required>
-                    <option value="">Select a graduation year</option>
-                    <option value="{{ senior_grad_year }}" {% if student.graduation_year == senior_grad_year %}selected{% endif %}>{{ senior_grad_year }}</option>
-                    <option value="{{ senior_grad_year + 1 }}" {% if student.graduation_year == senior_grad_year + 1 %}selected{% endif %}>{{ senior_grad_year + 1 }}</option>
-                    <option value="{{ senior_grad_year + 2 }}" {% if student.graduation_year == senior_grad_year + 2 %}selected{% endif %}>{{ senior_grad_year + 2 }}</option>
-                    <option value="{{ senior_grad_year + 3 }}" {% if student.graduation_year == senior_grad_year + 3 %}selected{% endif %}>{{ senior_grad_year + 3 }}</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="student_email">Email</label>
-                <input type="email" name="student_email" id="student_email" placeholder="Your DXSF email" value="{{ student.user.email }}" required>
-            </div>
-            <hr>
-            <div class="form-group date-group">
-                <label for="service_date_0">Date(s) of service</label>
-                <div id="service_date_container">
-                    <div class="service_date_row" id="service_date_row_0">
-                        <input type="date" name="service_date_input_0" id="service_date_input_0" placeholder="Date of service" required>
-                    </div>
-                </div>
-                <div class="date-group-buttons">
-                    <button class="btn btn-date-add" type="button" onclick="addServiceDate()"><i class="bi bi-plus-circle"></i> Add another date</button>
-                </div>
-            </div>
-            <div class="form-group">
-                {% if in_school == "true" %}
-                <label for="organization_name">Event Name</label>
-                <input type="text" name="organization_name" id="organization_name" placeholder="Name of community service event" required>
-                {% else %}
-                <label for="organization_name">Organization Name</label>
-                <input type="text" name="organization_name" id="organization_name" placeholder="Name of service organization" required>
-                {% endif %}
-            </div>
-            <div class="form-group">
-                {% if in_school == "true" %}
-                    <label for="contact_search">Contact</label>
-                    <span class="text-muted">Search by name, email, or title</span>
-                    <input type="text" name="contact_search" id="contact_search" onkeyup="searchFaculty()" placeholder="Name of contact at DXSF" required>
-                    <ul class="faculty-list" style="display: none;">
-                        {% for faculty in faculty_list %}
-                            <li onclick="selectFaculty(this)">
-                                <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
-                                <div class="faculty-info">
-                                    <h4>{{ faculty.name }}</h4>
-                                    <p>{{ faculty.title }}</p>
-                                    <p>{{ faculty.email }}</p>
-                                </div>
-                            </li>
-                        {% endfor %}
-                    </ul>
-
-                    <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
-                {% else %}
-                    <label for="contact_name">Contact Name</label>
-                    <div class="name-container">
-                        <input type="text" name="contact_first_name" id="contact_first_name" placeholder="First name of contact">
-                        <input type="text" name="contact_last_name" id="contact_last_name" placeholder="Last name of contact">
-                    </div>
-                {% endif %}
-
-            </div>
-            <div class="form-group">
-                {% if in_school == "true" %}
-                    <label for="contact_email" style="display: none;">Contact Email</label>
-                    <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
-                {% else %}
-                    <label for="contact_email">Contact Email</label>
-                    <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
-                {% endif %}
-            </div>
-
-            <div class="form-group">
-                <label for="hours">Hours</label>
-                <input type="number" name="hours" id="hours" placeholder="Number of hours of service" required>
-            </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <input type="text" name="description" id="description" placeholder="Description of service" required>
-            </div>
-            <div class="form-group">
-                <label for="proof_of_service">Proof of service</label>
-                <br>
-                <span class="text-muted">Please attach a signed letter, form, or screen shot of the text, email, or photo from the organization confirming your service hours.</span>
-                <input type="file" name="proof_of_service" id="proof_of_service" placeholder="Proof of service" required>
-            </div>
-            <br>
-            <div class="form-check">
-                <input type="checkbox" name="oath" id="oath" required>
-                <label class="form-check-label" for="oath">I have completed this form truthfully and accurately.</label>
-            </div>
-            <br>
-            <button class="btn btn-submit" type="submit">Submit</button>
+<form method="post">
+    {% if in_school == "true" %}
+        <h1 class="text-center header-text">In-School Community Service Form</h1>
+        <p class="text-center text-muted">Please complete all fields in the form below to log your in-school community service hours.</p>
+    {% elif in_school == "false" %}
+        <h1 class="text-center header-text">Out-of-School Community Service Form</h1>
+        <p class="text-center text-muted">Please complete all fields in the form below to log your out-of-school community service hours.</p>
+    {% endif %}
+    <div class="form-group">
+        <label>Name</label>
+        <div class="name-container">
+            <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" value="{{ student.user.first_name }}" required>
+            <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" value="{{ student.user.last_name }}" required>
         </div>
-    </form>
-    <script src="{{ url_for('static', filename='js/form_logic.js') }}"></script>
+    </div>
+    <div class="form-group">
+        <label for="graduation_year">Graduation Year</label>
+        <select name="graduation_year" id="graduation_year" required>
+            <option value="">Select a graduation year</option>
+            <option value="{{ senior_grad_year }}" {% if student.graduation_year == senior_grad_year %}selected{% endif %}>{{ senior_grad_year }}</option>
+            <option value="{{ senior_grad_year + 1 }}" {% if student.graduation_year == senior_grad_year + 1 %}selected{% endif %}>{{ senior_grad_year + 1 }}</option>
+            <option value="{{ senior_grad_year + 2 }}" {% if student.graduation_year == senior_grad_year + 2 %}selected{% endif %}>{{ senior_grad_year + 2 }}</option>
+            <option value="{{ senior_grad_year + 3 }}" {% if student.graduation_year == senior_grad_year + 3 %}selected{% endif %}>{{ senior_grad_year + 3 }}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="student_email">Email</label>
+        <input type="email" name="student_email" id="student_email" placeholder="Your DXSF email" value="{{ student.user.email }}" required>
+    </div>
+    <hr>
+    <div class="form-group date-group">
+        <label for="service_date_0">Date(s) of service</label>
+        <div id="service_date_container">
+            <div class="service_date_row" id="service_date_row_0">
+                <input type="date" name="service_date_input_0" id="service_date_input_0" placeholder="Date of service" required>
+            </div>
+        </div>
+        <div class="date-group-buttons">
+            <button class="btn btn-date-add" type="button" onclick="addServiceDate()"><i class="bi bi-plus-circle"></i> Add another date</button>
+        </div>
+    </div>
+    <div class="form-group">
+        {% if in_school == "true" %}
+        <label for="organization_name">Event Name</label>
+        <input type="text" name="organization_name" id="organization_name" placeholder="Name of community service event" required>
+        {% else %}
+        <label for="organization_name">Organization Name</label>
+        <input type="text" name="organization_name" id="organization_name" placeholder="Name of service organization" required>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        {% if in_school == "true" %}
+            <label for="contact_search">Contact</label>
+            <span class="text-muted">Search by name, email, or title</span>
+            <input type="text" name="contact_search" id="contact_search" onkeyup="searchFaculty()" placeholder="Name of contact at DXSF" required>
+            <ul class="faculty-list" style="display: none;">
+                {% for faculty in faculty_list %}
+                    <li onclick="selectFaculty(this)">
+                        <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
+                        <div class="faculty-info">
+                            <h4>{{ faculty.name }}</h4>
+                            <p>{{ faculty.title }}</p>
+                            <p>{{ faculty.email }}</p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+            <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
+        {% else %}
+            <label for="contact_name">Contact Name</label>
+            <div class="name-container">
+                <input type="text" name="contact_first_name" id="contact_first_name" placeholder="First name of contact">
+                <input type="text" name="contact_last_name" id="contact_last_name" placeholder="Last name of contact">
+            </div>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        {% if in_school == "true" %}
+            <label for="contact_email" style="display: none;">Contact Email</label>
+            <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
+        {% else %}
+            <label for="contact_email">Contact Email</label>
+            <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label for="hours">Hours</label>
+        <input type="number" name="hours" id="hours" placeholder="Number of hours of service" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description" placeholder="Description of service" required>
+    </div>
+    <div class="form-group">
+        <label for="proof_of_service">Proof of service</label>
+        <br>
+        <span class="text-muted">Please attach a signed letter, form, or screen shot of the text, email, or photo from the organization confirming your service hours.</span>
+        <input class="file-input" type="file" name="proof_of_service" id="proof_of_service" placeholder="Proof of service" required>
+    </div>
+    <div class="form-check mb-3 mt-4">
+        <input type="checkbox" name="oath" id="oath" required>
+        <label class="form-check-label" for="oath">I have completed this form truthfully and accurately.</label>
+    </div>
+    <br>
+    <button class="btn btn-submit" type="submit">Submit</button>
+</form>
+<script src="{{ url_for('static', filename='js/form_logic.js') }}"></script>
 {% endblock %}
