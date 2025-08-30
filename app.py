@@ -168,9 +168,10 @@ def logout():
     return redirect('/')
 
 @app.route('/student_portal/form', methods=['GET', 'POST'])
-def form():
+@user_required
+def form(user, student):
     in_school = request.args.get('in_school')
-    return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school)
+    return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
 
 @app.route('/student_portal')
 @user_required

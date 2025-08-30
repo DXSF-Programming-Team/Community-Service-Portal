@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "student_portal_base.html" %}
+{% block title %}Student Portal{% endblock %}
+{% block head %}
     <title>Student Portal</title>
-</head>
+{% endblock %}
+{% block body %}
 <body>
-    <h1>Student Portal</h1>
     <p>Hello, {{ student.user.first_name }} {{ student.user.last_name }}</p>
     <p>You have {{ student.in_school_hours + student.out_of_school_hours }} hours logged.</p>
     <p>In-school hours: {{ student.in_school_hours }} hours</p>
     <p>Out-of-school hours: {{ student.out_of_school_hours }} hours</p>
-    <a href="/student_portal/form?in_school=true">Log community in-school service hours</a>
-    <a href="/student_portal/form?in_school=false">Log community out-of-school service hours</a>
-    <br>
-    <a href="/logout">Logout</a>
 </body>
-</html>
+{% endblock %}

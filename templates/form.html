@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Service Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+{% extends "student_portal_base.html" %}
+{% block title %}Community Service Form{% endblock %}
+{% block styles %}
     <style>
         body {
             font-family: 'EB Garamond', serif;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Oswald', sans-serif;
+        }
+        .header-text {
+            color: #002d5b;
         }
         .form-container {
             max-width: 600px;
@@ -117,37 +114,41 @@
             padding: 5px 10px;
             width: 100%;
         }
+        .btn-submit:hover {
+            background-color: #c82333;
+            color: white;
+            cursor: pointer;
+        }
     </style>
-</head>
-<body>
-    <a href="/student_portal">Back to Student Portal</a>
+{% endblock %}
+{% block body %}
     <div class="form-container">
         <form method="post">
             {% if in_school == "true" %}
-                <h1 class="text-center">In-School Community Service Form</h1>
+                <h1 class="text-center header-text">In-School Community Service Form</h1>
             {% elif in_school == "false" %}
-                <h1 class="text-center">Out-of-School Community Service Form</h1>
+                <h1 class="text-center header-text">Out-of-School Community Service Form</h1>
             {% endif %}
             <div class="form-group">
                 <label>Name</label>
                 <div class="name-container">
-                    <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" required>
-                    <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" required>
+                    <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" value="{{ student.user.first_name }}" required>
+                    <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" value="{{ student.user.last_name }}" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="graduation_year">Graduation Year</label>
                 <select name="graduation_year" id="graduation_year" required>
                     <option value="">Select a graduation year</option>
-                    <option value="{{ senior_grad_year }}">{{ senior_grad_year }}</option>
-                    <option value="{{ senior_grad_year + 1 }}">{{ senior_grad_year + 1 }}</option>
-                    <option value="{{ senior_grad_year + 2 }}">{{ senior_grad_year + 2 }}</option>
-                    <option value="{{ senior_grad_year + 3 }}">{{ senior_grad_year + 3 }}</option>
+                    <option value="{{ senior_grad_year }}" {% if student.graduation_year == senior_grad_year %}selected{% endif %}>{{ senior_grad_year }}</option>
+                    <option value="{{ senior_grad_year + 1 }}" {% if student.graduation_year == senior_grad_year + 1 %}selected{% endif %}>{{ senior_grad_year + 1 }}</option>
+                    <option value="{{ senior_grad_year + 2 }}" {% if student.graduation_year == senior_grad_year + 2 %}selected{% endif %}>{{ senior_grad_year + 2 }}</option>
+                    <option value="{{ senior_grad_year + 3 }}" {% if student.graduation_year == senior_grad_year + 3 %}selected{% endif %}>{{ senior_grad_year + 3 }}</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="student_email">Email</label>
-                <input type="email" name="student_email" id="student_email" placeholder="Your DXSF email" required>
+                <input type="email" name="student_email" id="student_email" placeholder="Your DXSF email" value="{{ student.user.email }}" required>
             </div>
             <hr>
             <div class="form-group date-group">
@@ -232,5 +233,4 @@
         </div>
     </form>
     <script src="{{ url_for('static', filename='js/form_logic.js') }}"></script>
-</body>
-</html>
+{% endblock %}
