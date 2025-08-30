@@ -36,7 +36,7 @@
             border: 1px solid #ccc;
             border-radius: 0.25rem;
         }
-        .student-name-container {
+        .name-container {
             display: flex;
             gap: 10px;
         }
@@ -130,7 +130,7 @@
             {% endif %}
             <div class="form-group">
                 <label>Name</label>
-                <div class="student-name-container">
+                <div class="name-container">
                     <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" required>
                     <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" required>
                 </div>
@@ -191,7 +191,10 @@
                     <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
                 {% else %}
                     <label for="contact_name">Contact Name</label>
-                    <input type="text" name="contact_name" id="contact_name" placeholder="Name of contact at service organization" required>
+                    <div class="name-container">
+                        <input type="text" name="contact_first_name" id="contact_first_name" placeholder="First name of contact">
+                        <input type="text" name="contact_last_name" id="contact_last_name" placeholder="Last name of contact">
+                    </div>
                 {% endif %}
 
             </div>
@@ -201,7 +204,7 @@
                     <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
                 {% else %}
                     <label for="contact_email">Contact Email</label>
-                    <input type="text" name="contact_email" id="contact_email" placeholder="Email number of contact at service organization" required>
+                    <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
                 {% endif %}
             </div>
 
@@ -215,6 +218,8 @@
             </div>
             <div class="form-group">
                 <label for="proof_of_service">Proof of service</label>
+                <br>
+                <span class="text-muted">Please attach a signed letter, form, or screen shot of the text, email, or photo from the organization confirming your service hours.</span>
                 <input type="file" name="proof_of_service" id="proof_of_service" placeholder="Proof of service" required>
             </div>
             <br>

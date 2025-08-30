@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+        }
+        .header-text {
+            margin-top: 1rem;
+            font-size: 2.2rem;
+        }
+        .login-link {
+            text-align: center;
+        }
+        .login-link a {
+            color: #007bff;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group label::after {
+            content: "*";
+            color: red;
+            margin-left: 2px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+        .name-container {
+            display: flex;
+            gap: 10px;
+        }
+        .is-invalid:focus {
+            outline-color: red;
+        }
+        .btn-submit {
+            background-color: #a30c33;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 1rem;
+            width: 40%;
+        }   
+        .btn-submit:hover {
+            background-color: #c82333;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center header-text">Login</h1>
+    <form method="post">
+        <div class="form-container">
+
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p class="text-danger">{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+
+            <div class="login-link">
+                <p>Need to make an account? <a href="/register">Register here</a></p>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <div class="name-container">
+                    <input type="email" name="email" id="email" placeholder="Your DXSF email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Your password" required>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-submit">Login</button>
+            </div>
+    
+        </div>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        });
+      </script>
+</body>
+</html>
