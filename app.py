@@ -1,21 +1,31 @@
-from flask import Flask, send_from_directory, render_template, request
+from flask import Flask, send_from_directory, render_template, request, session, redirect, url_for, flash, get_flashed_messages
 from flask_sqlalchemy import SQLAlchemy
 import os
 from datetime import datetime
 import json
+from functools import wraps
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/community-service-db'
+app.secret_key = 'your_secret_key_here'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/app_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
-class Student(db.Model):
-    __tablename__ = 'student'
+class User(db.Model):
+    __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(100), nullable=False)
+    role = db.Column(db.String(50), nullable=False)
+    password_salt = db.Column(db.String(100), nullable=False)
+    password_hash = db.Column(db.String(100), nullable=False)
     first_name = db.Column(db.String(50), nullable=False)
     last_name = db.Column(db.String(50), nullable=False)
+
+class Student(db.Model):
+    __tablename__ = 'students'
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), primary_key=True, nullable=False)
+    user = db.relationship('User', backref='student')
     graduation_year = db.Column(db.Integer, nullable=False)
-    email = db.Column(db.String(100), nullable=False)
     in_school_hours = db.Column(db.Integer, nullable=False)
     out_of_school_hours = db.Column(db.Integer, nullable=False)
     service_records = db.relationship('ServiceRecord', backref='student')
@@ -23,7 +33,7 @@ class Student(db.Model):
 class ServiceRecord(db.Model):
     __tablename__ = 'service_records'
     id = db.Column(db.Integer, primary_key=True)
-    student_id = db.Column(db.Integer, db.ForeignKey('student.id'), nullable=False)
+    student_id = db.Column(db.Integer, db.ForeignKey('students.user_id'), nullable=False)
     dates = db.Column(db.Date, nullable=False)
     organization_name = db.Column(db.String(1000), nullable=False)
     contact_name = db.Column(db.String(100), nullable=False)
@@ -37,6 +47,40 @@ class ServiceRecord(db.Model):
 with open("faculty_list.json", "r") as f:
     faculty_list = json.load(f)
 
+current_date = datetime.now()
+if 6 <= current_date.month <= 12:
+    senior_grad_year = current_date.year + 1
+else:
+    senior_grad_year = current_date.year
+
+#TODO: add password hashing and salt
+def check_user_credentials(email, password):
+    user = db.session.query(User).filter_by(email=email).first()
+    if not user:
+        return False
+    return user.password_hash == password
+
+#decorator to check if user is logged in and has the correct role
+def user_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'user' not in session:
+            return redirect(url_for('login'))
+        user = db.session.query(User).filter_by(email=session['user']).first()
+        if user.role == 'admin':
+            return f(user=user, *args, **kwargs)
+        elif user.role == 'student':
+            student = db.session.query(Student).filter_by(user_id=user.id).first()
+            return f(user=user, student=student, *args, **kwargs)
+        else:
+            return redirect(url_for('login'))
+    return decorated_function
+
+
+@app.route('/')
+def index():
+    return redirect(url_for('login'))
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(
@@ -45,27 +89,97 @@ def favicon():
         mimetype='image/vnd.microsoft.icon'
     )
 
-@app.route('/form', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'GET':
+        get_flashed_messages()
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        if check_user_credentials(email, password):
+            session['user'] = email
+            user = db.session.query(User).filter_by(email=email).first()
+            if user.role == 'student':
+                return redirect(url_for('student_portal'))
+            elif user.role == 'admin':
+                return redirect(url_for('admin_portal'))
+            else:
+                return redirect('/')
+        else:
+            flash('Invalid email or password. If you do not have an account, please register.', 'error')
+    return render_template('login.html')
+
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'GET':
+        get_flashed_messages()
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        graduation_year = request.form['graduation_year']
+        role = 'student'
+        first_name = request.form['student_first_name']
+        last_name = request.form['student_last_name']
+        #TODO: add password hashing and salt
+        user = User(
+            email=email, 
+            password_hash=password, 
+            password_salt=password, 
+            role=role,
+            first_name=first_name,
+            last_name=last_name,
+        )
+        with app.app_context():
+            try:
+                db.session.add(user)
+                db.session.commit()
+                print(f"User {email} registered successfully")
+                session['user'] = email
+                if role == 'student':
+                    student = Student(
+                        user_id=user.id,
+                        graduation_year=graduation_year,
+                        in_school_hours=0,
+                        out_of_school_hours=0,
+                        service_records=[]
+                    )
+                    try:
+                        db.session.add(student)
+                        db.session.commit()
+                        print(f"Student {email} registered successfully")
+                    except Exception as e:
+                        flash("Error registering student. Please try again.", "error")
+                        print(f"Error adding student: {e}")
+                        db.session.rollback()
+                        return render_template('register.html')
+                    return redirect(url_for('student_portal'))
+                elif role == 'admin':
+                    return redirect(url_for('admin_portal'))
+            except Exception as e:
+                flash("Error registering user. If you already have an account, please login.", "error")
+                print(f"Error adding user: {e}")
+                db.session.rollback()
+                return render_template('register.html')
+    return render_template('register.html', senior_grad_year=senior_grad_year)
+
+@app.route('/logout')
+def logout():
+    session.pop('user', None)
+    return redirect('/')
+
+@app.route('/student_portal/form', methods=['GET', 'POST'])
 def form():
-    # get the senior's graduation year to fill out the form options automatically
     in_school = request.args.get('in_school')
-    current_date = datetime.now()
-    if 6 <= current_date.month <= 12:
-        senior_grad_year = current_date.year + 1
-    else:
-        senior_grad_year = current_date.year
     return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 @app.route('/student_portal')
-def student_portal():
-    return render_template('student_portal.html')
+@user_required
+def student_portal(user, student):
+    return render_template('student_portal.html', student=student)
 
 @app.route('/admin_portal')
-def admin_portal():
+@user_required
+def admin_portal(user):
     return render_template('admin_portal.html')
 
 
