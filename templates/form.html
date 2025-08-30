@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Service Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,11 +25,95 @@
         .form-group label {
             font-weight: 600;
         }
+        .form-group label::after {
+            content: "*";
+            color: red;
+            margin-left: 2px;
+        }
         .form-group input, .form-group select {
             width: 100%;
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 0.25rem;
+        }
+        .student-name-container {
+            display: flex;
+            gap: 10px;
+        }
+        .date-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .service_date_row {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+        .date-group-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .btn-date-remove {
+            background-color: #dc3545;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .btn-date-remove:hover {
+            background-color: #c82333;
+            cursor: pointer;
+        }
+        .btn-date-add {
+            background-color: #002d5b;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: 40%;
+        }
+        .btn-date-add:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+        .faculty-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: scroll;
+            height: 300px;
+        }
+        .faculty-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+        .faculty-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .faculty-list li img {
+            width: 48px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .faculty-list li h4 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .faculty-list li p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .btn-submit {
+            background-color: #a30c33;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: 100%;
         }
     </style>
 </head>
@@ -37,59 +122,163 @@
     <div class="form-container">
         <form method="post">
             <h1 class="text-center">Community Service Form</h1>
-            <div class="form-group required">
-                <label for="student_name">Name</label>
-                <input type="text" name="student_name" placeholder="Your name">
+            <div class="form-group">
+                <label>Name</label>
+                <div class="student-name-container">
+                    <input type="text" name="student_first_name" id="student_first_name" placeholder="Your first name" required>
+                    <input type="text" name="student_last_name" id="student_last_name" placeholder="Your last name" required>
+                </div>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="graduation_year">Graduation Year</label>
-                <select name="graduation_year">
+                <select name="graduation_year" id="graduation_year" required>
+                    <option value="">Select a graduation year</option>
                     <option value="{{ senior_grad_year }}">{{ senior_grad_year }}</option>
                     <option value="{{ senior_grad_year + 1 }}">{{ senior_grad_year + 1 }}</option>
                     <option value="{{ senior_grad_year + 2 }}">{{ senior_grad_year + 2 }}</option>
                     <option value="{{ senior_grad_year + 3 }}">{{ senior_grad_year + 3 }}</option>
                 </select>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="student_email">Email</label>
-                <input type="email" name="student_email" placeholder="Your DXSF email">
+                <input type="email" name="student_email" id="student_email" placeholder="Your DXSF email" required>
             </div>
-            <div class="form-group required">
-                <label for="service_date">Date of service</label>
-                <input type="date" name="service_date" placeholder="Date of service">
+            <hr>
+            <div class="form-group date-group">
+                <label for="service_date_0">Date(s) of service</label>
+                <div id="service_date_container">
+                    <div class="service_date_row" id="service_date_row_0">
+                        <input type="date" name="service_date_input_0" id="service_date_input_0" placeholder="Date of service" required>
+                    </div>
+                </div>
+                <div class="date-group-buttons">
+                    <button class="btn btn-date-add" type="button" onclick="addServiceDate()"><i class="bi bi-plus-circle"></i> Add another date</button>
+                </div>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="organization_name">Organization Name</label>
-                <input type="text" name="organization_name" placeholder="Name of service organization">
+                <input type="text" name="organization_name" id="organization_name" placeholder="Name of service organization" required>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="contact_name">Contact Name</label>
-                <input type="text" name="contact_name" placeholder="Name of contact at service organization">
+                <input type="text" name="contact_name" id="contact_name" placeholder="Name of contact at service organization" required>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="contact_email">Contact Email</label>
-                <input type="text" name="contact_email" placeholder="Email number of contact at service organization">
+                <input type="text" name="contact_email" id="contact_email" onkeyup="searchFaculty()" placeholder="Email number of contact at service organization">
+                <ul class="faculty-list">
+                    {% for faculty in faculty_list %}
+                        <li onclick="selectFaculty('{{ faculty.email }}')">
+                            <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
+                            <div class="faculty-info">
+                                <h4>{{ faculty.name }}</h4>
+                                <p>{{ faculty.title }}</p>
+                                <p>{{ faculty.email }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="form-group required">
+
+            <div class="form-group">
                 <label for="hours">Hours</label>
-                <input type="number" name="hours" placeholder="Number of hours">
+                <input type="number" name="hours" id="hours" placeholder="Number of hours" required>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="description">Description</label>
-                <input type="text" name="description" placeholder="Description of service">
+                <input type="text" name="description" id="description" placeholder="Description of service" required>
             </div>
-            <div class="form-group required">
+            <div class="form-group">
                 <label for="proof_of_service">Proof of service</label>
-                <input type="file" name="proof_of_service" placeholder="Proof of service">
+                <input type="file" name="proof_of_service" id="proof_of_service" placeholder="Proof of service" required>
             </div>
             <br>
             <div class="form-check">
-                <input type="checkbox" name="oath">
+                <input type="checkbox" name="oath" id="oath" required>
                 <label class="form-check-label" for="oath">I have completed this form truthfully and accurately.</label>
             </div>
             <br>
-            <button type="submit">Submit</button>
+            <button class="btn btn-submit" type="submit">Submit</button>
         </div>
     </form>
+    <script>
+        const student_first_name = document.getElementsByName("student_first_name")[0];
+        const student_last_name = document.getElementsByName("student_last_name")[0];
+        const graduation_year = document.getElementsByName("graduation_year")[0];
+        const student_email = document.getElementsByName("student_email")[0];
+        
+        function autofillEmail() {
+            if (student_first_name.value && student_last_name.value && graduation_year.value) {
+                const email = graduation_year.value.toString().toLowerCase().slice(2, 4) + 
+                            student_last_name.value.toLowerCase().slice(0, 4) +
+                            student_first_name.value.toLowerCase().slice(0, 2) + "@dextersouthfield.org";
+                student_email.value = email;
+            }
+        }
+
+        student_first_name.addEventListener("input", autofillEmail);
+        student_last_name.addEventListener("input", autofillEmail);
+        graduation_year.addEventListener("input", autofillEmail);
+
+        // dates are zero indexed
+        function addServiceDate() {
+            const serviceDateContainer = document.getElementById("service_date_container");
+            const newIndex = serviceDateContainer.children.length;
+            const newRow = document.createElement("div");
+            newRow.className = "service_date_row";
+            newRow.id = "service_date_row_" + newIndex;
+            serviceDateContainer.appendChild(newRow);
+
+            const newServiceDate = document.createElement("input");
+            newServiceDate.type = "date";
+            newServiceDate.name = "service_date_input_" + newIndex;
+            newServiceDate.id = "service_date_input_" + newIndex;
+            newServiceDate.placeholder = "Date of service";
+            newServiceDate.required = true;
+            newRow.appendChild(newServiceDate);
+
+            const newRemoveButton = document.createElement("button");
+            newRemoveButton.type = "button";
+            newRemoveButton.id = "remove_service_date_button_" + newIndex;
+            newRemoveButton.name = "remove_service_date_button_" + newIndex;
+            newRemoveButton.className = "btn btn-date-remove";
+            newRemoveButton.onclick = function() { removeServiceDate(newIndex); };
+            newRemoveButton.innerHTML = "<i class='bi bi-trash'></i>";
+            newRow.appendChild(newRemoveButton);
+        }
+
+        function removeServiceDate(index) {
+            const serviceDateContainer = document.getElementById("service_date_container");
+            console.log("Removing service date " + index);
+            const dateRow = document.getElementById("service_date_row_" + index);
+            dateRow.remove();
+            
+            // Reindex remaining elements
+            let newIndex = 0;
+            Array.from(serviceDateContainer.children).forEach(function(child) {
+                const currentIndex = newIndex;
+                const row = child;
+                console.log("Processing row " + newIndex);
+                row.id = "service_date_row_" + currentIndex;
+                row.name = "service_date_row_" + currentIndex;
+                
+                Array.from(row.children).forEach(function(child) {
+                    const childId = child.id;
+                    console.log("Child ID: " + childId);
+                    
+                    if (childId && childId.includes("service_date_input_")) {
+                        child.name = "service_date_input_" + currentIndex;
+                        child.id = "service_date_input_" + currentIndex;
+                    } else if (childId && childId.includes("remove_service_date_button_")) {
+                        child.name = "remove_service_date_button_" + currentIndex;
+                        child.id = "remove_service_date_button_" + currentIndex;
+                        child.onclick = function() { removeServiceDate(currentIndex); };
+                        console.log(`Setting onclick for remove service date ${currentIndex}. Will call removeServiceDate(${currentIndex})`);
+                    }
+                });
+                newIndex++;
+            });
+        }
+    </script>
 </body>
 </html>
