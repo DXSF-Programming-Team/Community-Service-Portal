@@ -174,19 +174,29 @@ def student_portal(user, student):
 
 @app.route('/student_portal/form', methods=['GET', 'POST'])
 @user_required
-def form(user, student):
+def student_form(user, student):
     in_school = request.args.get('in_school')
-    return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
+    return render_template('student_form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
 
 @app.route('/student_portal/events')
 @user_required
-def events(user, student):
-    return render_template('events.html')
+def student_events(user, student):
+    return render_template('student_events.html')
 
 @app.route('/admin_portal')
 @user_required
 def admin_portal(user):
     return render_template('admin_portal.html')
+
+@app.route('/admin_portal/students')
+@user_required
+def admin_students(user):
+    return render_template('admin_student_db.html')
+
+@app.route('/admin_portal/events')
+@user_required
+def admin_events(user):
+    return render_template('admin_events.html')
 
 
 if __name__ == '__main__':

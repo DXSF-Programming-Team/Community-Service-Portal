@@ -27,6 +27,8 @@ def init_db():
         )
     """)
 
+    cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('admin@admin.com', 'admin', 'admin', 'admin', 'Admin', 'Admin')")
+
     cur.execute("""
         CREATE TABLE students (
             user_id INTEGER PRIMARY KEY,

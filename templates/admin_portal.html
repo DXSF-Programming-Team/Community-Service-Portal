@@ -1,3 +1,71 @@
-<h1>Admin Portal</h1>
-<p>This page does not exist yet.</p>
-<a href="/">Back to Home</a>
+{% extends "admin_portal_base.html" %}
+{% block title %}Admin Portal{% endblock %}
+{% block styles %}
+    <style>
+        .welcome-section {
+            margin-bottom: 2rem;
+        }
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .admin-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+            border-left: 4px solid #002d5b;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .admin-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: inherit;
+        }
+        .admin-card-icon {
+            font-size: 3rem;
+            color: #002d5b;
+            margin-bottom: 1rem;
+        }
+        .admin-card h3 {
+            color: #002d5b;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .admin-card p {
+            color: #6c757d;
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+        <div class="welcome-section">
+            <h1 class="text-center header-text">Welcome, Administrator</h1>
+            <p class="text-center text-muted">Manage the community service portal and monitor student progress</p>
+        </div>
+        
+        <div class="admin-grid">
+            <a href="admin_portal/students" class="admin-card students-card">
+                <div class="admin-card-icon">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <h3>Student Database</h3>
+                <p>View and manage student accounts, track service hours, and generate reports</p>
+            </a>
+            
+            <a href="admin_portal/events" class="admin-card events-card">
+                <div class="admin-card-icon">
+                    <i class="bi bi-calendar-event-fill"></i>
+                </div>
+                <h3>Event Management</h3>
+                <p>Create and manage upcoming community service events and opportunities</p>
+            </a>
+        </div>
+{% endblock %}

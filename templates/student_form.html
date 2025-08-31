@@ -120,10 +120,10 @@
 <form method="post">
     {% if in_school == "true" %}
         <h1 class="text-center header-text">In-School Community Service Form</h1>
-        <p class="text-center text-muted">Please complete all fields in the form below to log your in-school community service hours.</p>
+        <p class="text-center text-muted">Please complete all fields in the form below to log your in-school community service hours. You currently have {{ student.in_school_hours }} hour{% if student.in_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
     {% elif in_school == "false" %}
         <h1 class="text-center header-text">Out-of-School Community Service Form</h1>
-        <p class="text-center text-muted">Please complete all fields in the form below to log your out-of-school community service hours.</p>
+        <p class="text-center text-muted">Please complete all fields in the form below to log your out-of-school community service hours. You currently have {{ student.out_of_school_hours }} hour{% if student.out_of_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
     {% endif %}
     <div class="form-group">
         <label>Name</label>
