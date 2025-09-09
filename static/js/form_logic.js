@@ -109,9 +109,9 @@ function searchFaculty() {
 function selectFaculty(facultyListItem) {
     const name = facultyListItem.querySelector("h4").textContent;
     const email = facultyListItem.querySelectorAll("p")[1].textContent;
-    const contactEmail = document.getElementsByName("contact_email")[0];
+    const contactEmail = document.getElementsByName("school_contact_email")[0];
     contactEmail.value = email;
-    const contactNameHidden = document.getElementsByName("contact_name_hidden")[0];
+    const contactNameHidden = document.getElementsByName("school_contact_name_hidden")[0];
     contactNameHidden.value = name;
     const contactSearch = document.getElementsByName("contact_search")[0];
     contactSearch.value = name;

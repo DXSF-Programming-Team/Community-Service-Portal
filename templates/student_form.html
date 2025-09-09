@@ -179,11 +179,11 @@
         </div>
     </div>
     <div class="form-group">
-        <label for="organization_name" class="in-school-only">Event Name</label>
-        <input type="text" name="organization_name" id="organization_name" class="in-school-only" placeholder="Name of community service event" required>
+        <label for="in_school_event_name" class="in-school-only">Event Name</label>
+        <input type="text" name="in_school_event_name" id="in_school_event_name" class="in-school-only" placeholder="Name of community service event" required>
         
-        <label for="organization_name" class="out-school-only">Organization Name</label>
-        <input type="text" name="organization_name" id="organization_name" class="out-school-only" placeholder="Name of service organization" required>
+        <label for="external_organization_name" class="out-school-only">Organization Name</label>
+        <input type="text" name="external_organization_name" id="external_organization_name" class="out-school-only" placeholder="Name of service organization" required>
     </div>
     <div class="form-group in-school-only">
         <label for="contact_search">Contact</label>
@@ -201,24 +201,24 @@
                 </li>
             {% endfor %}
         </ul>
-        <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
+        <input type="text" name="school_contact_name_hidden" id="school_contact_name_hidden" style="display: none;">
     </div>
     
     <div class="form-group out-school-only">
-        <label for="out_of_school_contact_name">Contact Name</label>
+        <label for="external_contact_name">Contact Name</label>
         <div class="name-container">
-            <input type="text" name="out_of_school_contact_first_name" id="out_of_school_contact_first_name" placeholder="First name of contact">
-            <input type="text" name="out_of_school_contact_last_name" id="out_of_school_contact_last_name" placeholder="Last name of contact">
+            <input type="text" name="external_contact_first_name" id="external_contact_first_name" placeholder="First name of contact">
+            <input type="text" name="external_contact_last_name" id="external_contact_last_name" placeholder="Last name of contact">
         </div>
     </div>
     <div class="form-group in-school-only">
-        <label for="contact_email" style="display: none;">Contact Email</label>
-        <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
+        <label for="school_contact_email" style="display: none;">Contact Email</label>
+        <input type="text" name="school_contact_email" id="school_contact_email" style="display: none;" required>
     </div>
     
     <div class="form-group out-school-only">
-        <label for="contact_email">Contact Email</label>
-        <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
+        <label for="external_contact_email">Contact Email</label>
+        <input type="text" name="external_contact_email" id="external_contact_email" placeholder="Email address of contact at service organization" required>
     </div>
     <div class="form-group">
         <label for="hours">Hours</label>

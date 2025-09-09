@@ -36,6 +36,7 @@ def init_db():
             graduation_year INTEGER NOT NULL,
             in_school_hours INTEGER NOT NULL,
             out_of_school_hours INTEGER NOT NULL,
+            required_hours INTEGER NOT NULL,
             FOREIGN KEY (user_id) REFERENCES users(id)
         )
     """)
@@ -48,6 +49,8 @@ def init_db():
             organization_name VARCHAR(255) NOT NULL,
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
+            is_in_school BOOLEAN NOT NULL,
+            status VARCHAR(255) NOT NULL,
             FOREIGN KEY (student_id) REFERENCES students(user_id)
         )
     """)
@@ -57,9 +60,9 @@ def init_db():
             id SERIAL PRIMARY KEY,
             name VARCHAR(255) NOT NULL,
             date DATE NOT NULL,
+            location VARCHAR(255) NOT NULL,
             description VARCHAR(255) NOT NULL,
-            proof_of_service VARCHAR(255) NOT NULL,
-            hours INTEGER NOT NULL,
+            hours_offered INTEGER NOT NULL,
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
             all_students INTEGER[] NOT NULL
