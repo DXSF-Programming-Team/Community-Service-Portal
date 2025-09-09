@@ -123,3 +123,43 @@ function selectFaculty(facultyListItem) {
     }
     facultyListItem.style.backgroundColor = "#f0f0f0";
 }
+
+function toggleFormFields(isInSchool) {
+    // Get all the conditional elements
+    const inSchoolElements = document.querySelectorAll('.in-school-only');
+    const outSchoolElements = document.querySelectorAll('.out-school-only');
+    
+    if (isInSchool) {
+        // Show in-school elements, hide out-of-school elements
+        inSchoolElements.forEach(el => el.style.display = 'block');
+        outSchoolElements.forEach(el => el.style.display = 'none');
+    } else {
+        // Show out-of-school elements, hide in-school elements
+        inSchoolElements.forEach(el => el.style.display = 'none');
+        outSchoolElements.forEach(el => el.style.display = 'block');
+    }
+}
+
+document.getElementById('in_school_true').addEventListener('change', function() {
+    if (this.checked) {
+        toggleFormFields(true);
+    }
+});
+
+document.getElementById('in_school_false').addEventListener('change', function() {
+    if (this.checked) {
+        toggleFormFields(false);
+    }
+});
+
+// Initialize form based on current selection
+document.addEventListener('DOMContentLoaded', function() {
+    const inSchoolTrue = document.getElementById('in_school_true');
+    const inSchoolFalse = document.getElementById('in_school_false');
+    
+    if (inSchoolTrue.checked) {
+        toggleFormFields(true);
+    } else if (inSchoolFalse.checked) {
+        toggleFormFields(false);
+    }
+});

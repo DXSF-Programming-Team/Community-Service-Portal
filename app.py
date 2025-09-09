@@ -42,6 +42,17 @@ class ServiceRecord(db.Model):
     description = db.Column(db.String(1000), nullable=False)
     proof_of_service = db.Column(db.String(1000), nullable=False)
 
+class Event(db.Model):
+    __tablename__ = 'events'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    date = db.Column(db.Date, nullable=False)
+    description = db.Column(db.String(1000), nullable=False)
+    proof_of_service = db.Column(db.String(1000), nullable=False)
+    hours = db.Column(db.Integer, nullable=False)
+    contact_name = db.Column(db.String(100), nullable=False)
+    contact_email = db.Column(db.String(100), nullable=False)
+
 #TODO: add automatic rescraping of faculty list for the new school year
 
 with open("faculty_list.json", "r") as f:
@@ -174,19 +185,30 @@ def student_portal(user, student):
 
 @app.route('/student_portal/form', methods=['GET', 'POST'])
 @user_required
-def form(user, student):
+def student_form(user, student):
     in_school = request.args.get('in_school')
-    return render_template('form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
+    return render_template('student_form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
 
 @app.route('/student_portal/events')
 @user_required
-def events(user, student):
-    return render_template('events.html')
+def student_events(user, student):
+    return render_template('student_events.html')
 
 @app.route('/admin_portal')
 @user_required
 def admin_portal(user):
     return render_template('admin_portal.html')
+
+@app.route('/admin_portal/students')
+@user_required
+def admin_students(user):
+    return render_template('admin_student_db.html')
+
+@app.route('/admin_portal/events')
+@user_required
+def admin_events(user):
+    events = db.session.query(Event).all()
+    return render_template('admin_events.html', events=events)
 
 
 if __name__ == '__main__':

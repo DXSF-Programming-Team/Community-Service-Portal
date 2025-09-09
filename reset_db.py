@@ -14,6 +14,7 @@ def init_db():
     cur.execute("DROP TABLE IF EXISTS users CASCADE")
     cur.execute("DROP TABLE IF EXISTS students CASCADE")
     cur.execute("DROP TABLE IF EXISTS service_records CASCADE")
+    cur.execute("DROP TABLE IF EXISTS events CASCADE")
 
     cur.execute("""
         CREATE TABLE users (
@@ -26,6 +27,8 @@ def init_db():
             last_name VARCHAR(255) NOT NULL
         )
     """)
+
+    cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('admin@admin.com', 'admin', 'admin', 'admin', 'Admin', 'Admin')")
 
     cur.execute("""
         CREATE TABLE students (
@@ -46,6 +49,20 @@ def init_db():
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
             FOREIGN KEY (student_id) REFERENCES students(user_id)
+        )
+    """)
+
+    cur.execute("""
+        CREATE TABLE events (
+            id SERIAL PRIMARY KEY,
+            name VARCHAR(255) NOT NULL,
+            date DATE NOT NULL,
+            description VARCHAR(255) NOT NULL,
+            proof_of_service VARCHAR(255) NOT NULL,
+            hours INTEGER NOT NULL,
+            contact_name VARCHAR(255) NOT NULL,
+            contact_email VARCHAR(255) NOT NULL,
+            all_students INTEGER[] NOT NULL
         )
     """)
 
