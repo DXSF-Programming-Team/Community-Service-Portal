@@ -19,11 +19,22 @@
             color: red;
             margin-left: 2px;
         }
+        .form-group label.no-asterisk::after {
+            content: "";
+        }
         .form-group input, .form-group select {
             width: 100%;
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 0.25rem;
+        }
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .form-check-input {
+            width: 1% !important;
         }
         .name-container {
             display: flex;
@@ -118,13 +129,22 @@
 {% endblock %}
 {% block body %}
 <form method="post">
-    {% if in_school == "true" %}
-        <h1 class="text-center header-text">In-School Community Service Form</h1>
-        <p class="text-center text-muted">Please complete all fields in the form below to log your in-school community service hours. You currently have {{ student.in_school_hours }} hour{% if student.in_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
-    {% elif in_school == "false" %}
-        <h1 class="text-center header-text">Out-of-School Community Service Form</h1>
-        <p class="text-center text-muted">Please complete all fields in the form below to log your out-of-school community service hours. You currently have {{ student.out_of_school_hours }} hour{% if student.out_of_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
-    {% endif %}
+    <div class="form-group">
+        <label class="no-asterisk">I am logging...</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="in_school" id="in_school_true" value="true" {% if in_school == "true" %}checked{% endif %}>
+            <label class="form-check-label no-asterisk" for="in_school_true">In-School Hours</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="in_school" id="in_school_false" value="false" {% if in_school == "false" %}checked{% endif %}>
+            <label class="form-check-label no-asterisk" for="in_school_false">Out-of-School Hours</label>
+        </div>
+    </div>
+    <h1 class="text-center header-text in-school-only">In-School Community Service Form</h1>
+    <p class="text-center text-muted in-school-only">Please complete all fields in the form below to log your in-school community service hours. You currently have {{ student.in_school_hours }} hour{% if student.in_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
+    
+    <h1 class="text-center header-text out-school-only">Out-of-School Community Service Form</h1>
+    <p class="text-center text-muted out-school-only">Please complete all fields in the form below to log your out-of-school community service hours. You currently have {{ student.out_of_school_hours }} hour{% if student.out_of_school_hours == 1 %}{% else %}s{% endif %} logged.</p>
     <div class="form-group">
         <label>Name</label>
         <div class="name-container">
@@ -159,48 +179,46 @@
         </div>
     </div>
     <div class="form-group">
-        {% if in_school == "true" %}
-        <label for="organization_name">Event Name</label>
-        <input type="text" name="organization_name" id="organization_name" placeholder="Name of community service event" required>
-        {% else %}
-        <label for="organization_name">Organization Name</label>
-        <input type="text" name="organization_name" id="organization_name" placeholder="Name of service organization" required>
-        {% endif %}
+        <label for="organization_name" class="in-school-only">Event Name</label>
+        <input type="text" name="organization_name" id="organization_name" class="in-school-only" placeholder="Name of community service event" required>
+        
+        <label for="organization_name" class="out-school-only">Organization Name</label>
+        <input type="text" name="organization_name" id="organization_name" class="out-school-only" placeholder="Name of service organization" required>
     </div>
-    <div class="form-group">
-        {% if in_school == "true" %}
-            <label for="contact_search">Contact</label>
-            <span class="text-muted">Search by name, email, or title</span>
-            <input type="text" name="contact_search" id="contact_search" onkeyup="searchFaculty()" placeholder="Name of contact at DXSF" required>
-            <ul class="faculty-list" style="display: none;">
-                {% for faculty in faculty_list %}
-                    <li onclick="selectFaculty(this)">
-                        <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
-                        <div class="faculty-info">
-                            <h4>{{ faculty.name }}</h4>
-                            <p>{{ faculty.title }}</p>
-                            <p>{{ faculty.email }}</p>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
-            <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
-        {% else %}
-            <label for="contact_name">Contact Name</label>
-            <div class="name-container">
-                <input type="text" name="contact_first_name" id="contact_first_name" placeholder="First name of contact">
-                <input type="text" name="contact_last_name" id="contact_last_name" placeholder="Last name of contact">
-            </div>
-        {% endif %}
+    <div class="form-group in-school-only">
+        <label for="contact_search">Contact</label>
+        <span class="text-muted">Search by name, email, or title</span>
+        <input type="text" name="contact_search" id="contact_search" onkeyup="searchFaculty()" placeholder="Name of contact at DXSF" required>
+        <ul class="faculty-list" style="display: none;">
+            {% for faculty in faculty_list %}
+                <li onclick="selectFaculty(this)">
+                    <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
+                    <div class="faculty-info">
+                        <h4>{{ faculty.name }}</h4>
+                        <p>{{ faculty.title }}</p>
+                        <p>{{ faculty.email }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <input type="text" name="contact_name_hidden" id="contact_name_hidden" style="display: none;">
     </div>
-    <div class="form-group">
-        {% if in_school == "true" %}
-            <label for="contact_email" style="display: none;">Contact Email</label>
-            <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
-        {% else %}
-            <label for="contact_email">Contact Email</label>
-            <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
-        {% endif %}
+    
+    <div class="form-group out-school-only">
+        <label for="out_of_school_contact_name">Contact Name</label>
+        <div class="name-container">
+            <input type="text" name="out_of_school_contact_first_name" id="out_of_school_contact_first_name" placeholder="First name of contact">
+            <input type="text" name="out_of_school_contact_last_name" id="out_of_school_contact_last_name" placeholder="Last name of contact">
+        </div>
+    </div>
+    <div class="form-group in-school-only">
+        <label for="contact_email" style="display: none;">Contact Email</label>
+        <input type="text" name="contact_email" id="contact_email" style="display: none;" required>
+    </div>
+    
+    <div class="form-group out-school-only">
+        <label for="contact_email">Contact Email</label>
+        <input type="text" name="contact_email" id="contact_email" placeholder="Email address of contact at service organization" required>
     </div>
     <div class="form-group">
         <label for="hours">Hours</label>

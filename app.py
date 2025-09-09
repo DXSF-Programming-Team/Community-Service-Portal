@@ -42,6 +42,17 @@ class ServiceRecord(db.Model):
     description = db.Column(db.String(1000), nullable=False)
     proof_of_service = db.Column(db.String(1000), nullable=False)
 
+class Event(db.Model):
+    __tablename__ = 'events'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    date = db.Column(db.Date, nullable=False)
+    description = db.Column(db.String(1000), nullable=False)
+    proof_of_service = db.Column(db.String(1000), nullable=False)
+    hours = db.Column(db.Integer, nullable=False)
+    contact_name = db.Column(db.String(100), nullable=False)
+    contact_email = db.Column(db.String(100), nullable=False)
+
 #TODO: add automatic rescraping of faculty list for the new school year
 
 with open("faculty_list.json", "r") as f:
@@ -196,7 +207,8 @@ def admin_students(user):
 @app.route('/admin_portal/events')
 @user_required
 def admin_events(user):
-    return render_template('admin_events.html')
+    events = db.session.query(Event).all()
+    return render_template('admin_events.html', events=events)
 
 
 if __name__ == '__main__':

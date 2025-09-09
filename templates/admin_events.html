@@ -3,4 +3,18 @@
 {% block body %}
     <h1 class="text-center header-text">Upcoming Events</h1>
     <p>Here are the upcoming events:</p>
+    <ul>
+        {% for event in events %}
+            <li>
+                <h3>{{ event.name }}</h3>
+                <p>{{ event.date }}</p>
+                <p>{{ event.description }}</p>
+                <p>{{ event.proof_of_service }}</p>
+                <p>{{ event.hours }}</p>
+                <p>{{ event.contact_name }}</p>
+                <p>{{ event.contact_email }}</p>
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
 {% endblock %}
