@@ -188,11 +188,11 @@
                     <form method="POST" action="/student_portal/events" id="eventForm">
                         <div class="form-group required">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="in_school" id="in_school_true">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_true" value="true">
                                 <label class="form-check-label no-asterisk" for="in_school_true">In-School Event</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="in_school" id="in_school_false">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_false" value="false">
                                 <label class="form-check-label no-asterisk" for="in_school_false">Out-of-School Event</label>
                             </div>
                         </div>
@@ -215,6 +215,10 @@
                         <div class="form-group">
                             <label for="event_name" class>Event Name</label>
                             <input type="text" name="event_name" id="event_name" placeholder="Name of community service event" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Location of event" required>
                         </div>
                         <div class="form-group in-school-only">
                             <label for="contact_search">Contact</label>

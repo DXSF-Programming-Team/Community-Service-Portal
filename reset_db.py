@@ -29,6 +29,7 @@ def init_db():
     """)
 
     cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('admin@admin.com', 'admin', 'admin', 'admin', 'Admin', 'Admin')")
+    cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('27mortry@dextersouthfield.org', 'student', 'ryry', 'ryry', 'Ryder', 'Morton')")
 
     cur.execute("""
         CREATE TABLE students (
@@ -40,6 +41,8 @@ def init_db():
             FOREIGN KEY (user_id) REFERENCES users(id)
         )
     """)
+
+    cur.execute("INSERT INTO students (user_id, graduation_year, in_school_hours, out_of_school_hours, required_hours) VALUES (2, 2027, 0, 0, 40)")
 
     cur.execute("""
         CREATE TABLE service_records (
@@ -62,10 +65,12 @@ def init_db():
     cur.execute("""
         CREATE TABLE events (
             id SERIAL PRIMARY KEY,
+            creator_name VARCHAR(255) NOT NULL,
+            creator_email VARCHAR(255) NOT NULL,
             dates TEXT[] NOT NULL,
-            location VARCHAR(255) NOT NULL,
             organization_name VARCHAR(255) NOT NULL,
             event_name VARCHAR(255) NOT NULL,
+            location VARCHAR(255) NOT NULL,
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
             hours_offered INTEGER NOT NULL,
