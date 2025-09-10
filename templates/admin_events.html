@@ -7,13 +7,14 @@
     <ul>
         {% for event in events %}
             <li>
-                <h3>{{ event.name }}</h3>
-                <p>{{ event.date }}</p>
+                <h3>{{ event.event_name }}</h3>
                 <p>{{ event.description }}</p>
-                <p>{{ event.proof_of_service }}</p>
-                <p>{{ event.hours }}</p>
+                <p>{{ event.dates }}</p>
+                <p>{{ event.organization_name }}</p>
                 <p>{{ event.contact_name }}</p>
                 <p>{{ event.contact_email }}</p>
+                <p>{{ event.hours_offered }}</p>
+                <p>{{ event.is_in_school }}</p>
             </li>
             <hr>
         {% endfor %}

@@ -1,6 +1,289 @@
 {% extends "student_portal_base.html" %}
 {% block title %}Events{% endblock %}
+{% block styles %}
+    <style>
+        .events-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Modal stuff */
+        .modal-btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 10px;
+        }
+        .modal-btn {
+            background-color: #002d5b;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: 60%;
+        }
+        .modal-btn:hover {
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+        .modal-content {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+        .modal-header {
+            border-radius: 20px 20px 0 0;
+        }
+        .modal-body {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group label::after {
+            content: "*";
+            color: red;
+            margin-left: 2px;
+        }
+        .form-group label.no-asterisk::after {
+            content: "";
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .form-check-input {
+            width: 1% !important;
+        }
+        .name-container {
+            display: flex;
+            gap: 10px;
+        }
+        .date-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .service_date_row {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .date-group-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .btn-date-remove {
+            background-color: white;
+            border: none;
+            color: #dc3545;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        .btn-date-remove:hover {
+            background-color: #c82333;
+            color: white;
+            cursor: pointer;
+        }
+        .btn-date-add {
+            background-color: #002d5b;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            width: 40%;
+        }
+        .btn-date-add:hover {
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+        }
+        .faculty-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow-y: scroll;
+            max-height: 300px;
+        }
+        .faculty-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+        .faculty-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .faculty-list li img {
+            width: 48px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .faculty-list li h4 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .faculty-list li p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .btn-create-event {
+            background-color: #c82333;
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            width: 100%;
+        }
+        .btn-create-event:hover {
+            background-color: #dc3545;
+            color: white;
+            cursor: pointer;
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .modal-footer .clause {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .modal-footer .button-group {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+{% endblock %}
 {% block body %}
     <h1 class="text-center header-text">Upcoming Events</h1>
-    <p>Here are the upcoming events:</p>
+    
+    <div class="modal-btn-container">
+        <a class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#eventModal"><i class="bi bi-plus-circle"></i> Create a New Event</a>
+    </div>
+    
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eventModalLabel">Create a New Community Service Event</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="/student_portal/events" id="eventForm">
+                        <div class="form-group required">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_true">
+                                <label class="form-check-label no-asterisk" for="in_school_true">In-School Event</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_false">
+                                <label class="form-check-label no-asterisk" for="in_school_false">Out-of-School Event</label>
+                            </div>
+                        </div>
+                        <div class="form-group date-group">
+                            <label for="service_date_0">Date(s) of service</label>
+                            <div id="service_date_container">
+                                <div class="service_date_row" id="service_date_row_0">
+                                    <input type="date" name="service_date_input_0" id="service_date_input_0" placeholder="Date of service" required>
+                                </div>
+                            </div>
+                            <input type="hidden" name="num_dates" id="num_dates" style="display: none;">
+                            <div class="date-group-buttons">
+                                <button class="btn btn-date-add" type="button" onclick="addServiceDate()"><i class="bi bi-plus-circle"></i> Add another date</button>
+                            </div>
+                        </div>
+                        <div class="form-group out-school-only"> 
+                            <label for="external_organization_name" class="out-school-only">Organization Name</label>
+                            <input type="text" name="external_organization_name" id="external_organization_name" class="out-school-only" placeholder="Name of service organization" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event_name" class>Event Name</label>
+                            <input type="text" name="event_name" id="event_name" placeholder="Name of community service event" required>
+                        </div>
+                        <div class="form-group in-school-only">
+                            <label for="contact_search">Contact</label>
+                            <span class="text-muted">Search by name, email, or title</span>
+                            <input type="text" name="contact_search" id="contact_search" onkeyup="searchFaculty()" placeholder="Name of contact at DXSF" required>
+                            <ul class="faculty-list" style="display: none;">
+                                {% for faculty in faculty_list %}
+                                    <li onclick="selectFaculty(this)">
+                                        <img src="{{ faculty.photo }}" alt="{{ faculty.name }}">
+                                        <div class="faculty-info">
+                                            <h4>{{ faculty.name }}</h4>
+                                            <p>{{ faculty.title }}</p>
+                                            <p>{{ faculty.email }}</p>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <input type="text" name="school_contact_name_hidden" id="school_contact_name_hidden" style="display: none;">
+                        </div>
+                        
+                        <div class="form-group out-school-only">
+                            <label for="external_contact_name">Contact Name</label>
+                            <div class="name-container">
+                                <input type="text" name="external_contact_first_name" id="external_contact_first_name" placeholder="First name of contact">
+                                <input type="text" name="external_contact_last_name" id="external_contact_last_name" placeholder="Last name of contact">
+                            </div>
+                        </div>
+                        <div class="form-group in-school-only">
+                            <label for="school_contact_email" style="display: none;">Contact Email</label>
+                            <input type="text" name="school_contact_email" id="school_contact_email" style="display: none;" required>
+                        </div>
+                        
+                        <div class="form-group out-school-only">
+                            <label for="external_contact_email">Contact Email</label>
+                            <input type="text" name="external_contact_email" id="external_contact_email" placeholder="Email address of contact at service organization" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hours">Total Hours Offered</label>
+                            <input type="number" name="hours" id="hours" placeholder="Number of hours of service" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <input type="text" name="description" id="description" placeholder="Description of service" required>
+                        </div>
+                    
+                        <div class="modal-footer">
+                            <i class="text-muted clause">Your name and email will be displayed publicly as the creator of this event.</i>
+                            <button type="submit" class="btn btn-create-event"><i class="bi bi-send"></i> Create Event</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="events-container">
+        {% for event in events %}
+            <div class="event-card">
+                <h3>{{ event.event_name }}</h3>
+                <p>{{ event.description }}</p>
+                <p>{{ event.dates }}</p>
+                <p>{{ event.organization_name }}</p>
+                <p>{{ event.contact_name }}</p>
+                <p>{{ event.contact_email }}</p>
+                <p>{{ event.hours_offered }}</p>
+                <p>{{ event.is_in_school }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/form_logic.js') }}"></script>
 {% endblock %}

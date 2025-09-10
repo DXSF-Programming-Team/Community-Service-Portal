@@ -45,10 +45,14 @@ def init_db():
         CREATE TABLE service_records (
             id SERIAL PRIMARY KEY,
             student_id INTEGER NOT NULL,
-            date DATE NOT NULL,
+            dates TEXT[] NOT NULL,
             organization_name VARCHAR(255) NOT NULL,
+            event_name VARCHAR(255) NOT NULL,
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
+            hours INTEGER NOT NULL,
+            description VARCHAR(255) NOT NULL,
+            proof_of_service VARCHAR(255) NOT NULL,
             is_in_school BOOLEAN NOT NULL,
             status VARCHAR(255) NOT NULL,
             FOREIGN KEY (student_id) REFERENCES students(user_id)
@@ -58,14 +62,15 @@ def init_db():
     cur.execute("""
         CREATE TABLE events (
             id SERIAL PRIMARY KEY,
-            name VARCHAR(255) NOT NULL,
-            date DATE NOT NULL,
+            dates TEXT[] NOT NULL,
             location VARCHAR(255) NOT NULL,
-            description VARCHAR(255) NOT NULL,
-            hours_offered INTEGER NOT NULL,
+            organization_name VARCHAR(255) NOT NULL,
+            event_name VARCHAR(255) NOT NULL,
             contact_name VARCHAR(255) NOT NULL,
             contact_email VARCHAR(255) NOT NULL,
-            all_students INTEGER[] NOT NULL
+            hours_offered INTEGER NOT NULL,
+            description VARCHAR(255) NOT NULL,
+            is_in_school BOOLEAN NOT NULL
         )
     """)
 

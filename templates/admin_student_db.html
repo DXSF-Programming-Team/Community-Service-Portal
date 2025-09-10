@@ -42,9 +42,9 @@
             {% for student in students %}
                 <tr>
                     <td>{{ student.user_id }}</td>
-                    <td>{{ student.user_info.last_name }}</td>
-                    <td>{{ student.user_info.first_name }}</td>
-                    <td>{{ student.user_info.email }}</td>
+                    <td>{{ student.user.last_name }}</td>
+                    <td>{{ student.user.first_name }}</td>
+                    <td>{{ student.user.email }}</td>
                     <td>{{ student.graduation_year }}</td>
                     <td>{{ student.in_school_hours }}</td>
                     <td>{{ student.out_of_school_hours }}</td>

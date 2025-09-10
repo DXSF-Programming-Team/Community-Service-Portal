@@ -1,3 +1,4 @@
+/*
 const student_first_name = document.getElementsByName("student_first_name")[0];
 const student_last_name = document.getElementsByName("student_last_name")[0];
 const graduation_year = document.getElementsByName("graduation_year")[0];
@@ -15,6 +16,7 @@ function autofillEmail() {
 student_first_name.addEventListener("input", autofillEmail);
 student_last_name.addEventListener("input", autofillEmail);
 graduation_year.addEventListener("input", autofillEmail);
+*/
 
 // dates are zero-indexed
 function addServiceDate() {
@@ -41,6 +43,9 @@ function addServiceDate() {
     newRemoveButton.onclick = function() { removeServiceDate(newIndex); };
     newRemoveButton.innerHTML = "<i class='bi bi-trash'></i>";
     newRow.appendChild(newRemoveButton);
+
+    const numDates = document.getElementById("num_dates");
+    numDates.value = newIndex + 1;
 }
 
 function removeServiceDate(index) {
@@ -73,6 +78,9 @@ function removeServiceDate(index) {
             }
         });
         newIndex++;
+
+    const numDates = document.getElementById("num_dates");
+    numDates.value = newIndex + 1;
     });
 }
 
@@ -131,12 +139,44 @@ function toggleFormFields(isInSchool) {
     
     if (isInSchool) {
         // Show in-school elements, hide out-of-school elements
-        inSchoolElements.forEach(el => el.style.display = 'block');
-        outSchoolElements.forEach(el => el.style.display = 'none');
+        inSchoolElements.forEach(el => {
+            el.style.display = 'block';
+            // Add required attribute to input fields within in-school elements
+            const inputs = el.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                if (input.type !== 'radio' && input.type !== 'checkbox') {
+                    input.setAttribute('required', 'required');
+                }
+            });
+        });
+        outSchoolElements.forEach(el => {
+            el.style.display = 'none';
+            // Remove required attribute from input fields within out-of-school elements
+            const inputs = el.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.removeAttribute('required');
+            });
+        });
     } else {
         // Show out-of-school elements, hide in-school elements
-        inSchoolElements.forEach(el => el.style.display = 'none');
-        outSchoolElements.forEach(el => el.style.display = 'block');
+        inSchoolElements.forEach(el => {
+            el.style.display = 'none';
+            // Remove required attribute from input fields within in-school elements
+            const inputs = el.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.removeAttribute('required');
+            });
+        });
+        outSchoolElements.forEach(el => {
+            el.style.display = 'block';
+            // Add required attribute to input fields within out-of-school elements
+            const inputs = el.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                if (input.type !== 'radio' && input.type !== 'checkbox') {
+                    input.setAttribute('required', 'required');
+                }
+            });
+        });
     }
 }
 
@@ -154,6 +194,10 @@ document.getElementById('in_school_false').addEventListener('change', function()
 
 // Initialize form based on current selection
 document.addEventListener('DOMContentLoaded', function() {
+
+    const numDates = document.getElementById("num_dates");
+    numDates.value = 1;
+
     const inSchoolTrue = document.getElementById('in_school_true');
     const inSchoolFalse = document.getElementById('in_school_false');
     

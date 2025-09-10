@@ -35,8 +35,9 @@ class ServiceRecord(db.Model):
     __tablename__ = 'service_records'
     id = db.Column(db.Integer, primary_key=True)
     student_id = db.Column(db.Integer, db.ForeignKey('students.user_id'), nullable=False)
-    dates = db.Column(db.Date, nullable=False)
+    dates = db.Column(db.ARRAY(db.String(100)), nullable=False)
     organization_name = db.Column(db.String(1000), nullable=False)
+    event_name = db.Column(db.String(100), nullable=False)
     contact_name = db.Column(db.String(100), nullable=False)
     contact_email = db.Column(db.String(100), nullable=False)
     hours = db.Column(db.Integer, nullable=False)
@@ -48,13 +49,16 @@ class ServiceRecord(db.Model):
 class Event(db.Model):
     __tablename__ = 'events'
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    date = db.Column(db.Date, nullable=False)
+    dates = db.Column(db.ARRAY(db.String(100)), nullable=False)
     location = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.String(1000), nullable=False)
-    hours_offered = db.Column(db.Integer, nullable=False)
+    organization_name = db.Column(db.String(100), nullable=False)
+    event_name = db.Column(db.String(100), nullable=False)
     contact_name = db.Column(db.String(100), nullable=False)
     contact_email = db.Column(db.String(100), nullable=False)
+    hours_offered = db.Column(db.Integer, nullable=False)
+    description = db.Column(db.String(1000), nullable=False)
+    is_in_school = db.Column(db.Boolean, nullable=False)
+
 
 
 #TODO: add automatic rescraping of faculty list for the new school year
@@ -186,18 +190,23 @@ def logout():
 @app.route('/student_portal')
 @user_required
 def student_portal(user, student):
-    return render_template('student_portal.html', student=student)
+    events = db.session.query(Event).all()
+    return render_template('student_portal.html', student=student, events=events, faculty_list=faculty_list)
 
 @app.route('/student_portal/form', methods=['GET', 'POST'])
 @user_required
 def student_form(user, student):
     in_school = request.args.get('in_school')
     if request.method == 'POST':
+        dates = []
+        for i in range(int(request.form['num_dates'])):
+            dates.append(request.form['service_date_input_' + str(i)])
         if request.form['in_school'] == 'true':
             service_record = ServiceRecord(
                 student_id=student.user_id,
-                dates=request.form['dates'],
-                organization_name=request.form['in_school_event_name'],
+                dates=dates,
+                organization_name='Dexter Southfield',
+                event_name=request.form['event_name'],
                 contact_name=request.form['school_contact_name_hidden'],
                 contact_email=request.form['school_contact_email'],
                 hours=request.form['hours'],
@@ -206,14 +215,13 @@ def student_form(user, student):
                 is_in_school=True,
                 status='pending'
             )
-        else:
+        elif request.form['in_school'] == 'false':
             service_record = ServiceRecord(
                 student_id=student.user_id,
-                dates=request.form['dates'],
+                dates=dates,
                 organization_name=request.form['external_organization_name'],
-                # what to do if student fills out the contact's name incorrectly?
+                event_name=request.form['event_name'],
                 contact_name=request.form['external_contact_first_name'] + ' ' + request.form['external_contact_last_name'],
-                external_organization_last_name=request.form['external_organization_last_name'],
                 contact_email=request.form['external_contact_email'],
                 hours=request.form['hours'],
                 description=request.form['description'],
@@ -236,7 +244,45 @@ def student_form(user, student):
 @app.route('/student_portal/events')
 @user_required
 def student_events(user, student):
-    return render_template('student_events.html')
+    events = db.session.query(Event).all()
+    if request.method == 'POST':
+        dates = []
+        for i in range(int(request.form['num_dates'])):
+            dates.append(request.form['service_date_input_' + str(i)])
+        if request.form['in_school'] == 'true':
+            event = Event(
+                student_id=student.user_id,
+                dates=dates,
+                organization_name='Dexter Southfield',
+                event_name=request.form['event_name'],
+                contact_name=request.form['school_contact_name_hidden'],
+                contact_email=request.form['school_contact_email'],
+                hours_offered=request.form['hours'],
+                description=request.form['description'],
+                is_in_school=True,
+            )
+        elif request.form['in_school'] == 'false':
+            event = Event(
+                student_id=student.user_id,
+                dates=dates,
+                organization_name=request.form['external_organization_name'],
+                event_name=request.form['event_name'],
+                contact_name=request.form['external_contact_first_name'] + ' ' + request.form['external_contact_last_name'],
+                contact_email=request.form['external_contact_email'],
+                hours_offered=request.form['hours'],
+                description=request.form['description'],
+                is_in_school=False,
+            )
+        try:
+            db.session.add(event)
+            db.session.commit()
+            print(f"Event added successfully")
+        except Exception as e:
+            flash("Error adding event. Please try again.", "error")
+            print(f"Error adding event: {e}")
+            db.session.rollback()
+            return render_template('student_events.html', events=events, faculty_list=faculty_list)
+    return render_template('student_events.html', events=events, faculty_list=faculty_list)
 
 @app.route('/admin_portal')
 @user_required
@@ -247,15 +293,13 @@ def admin_portal(user):
 @user_required
 def admin_students(user):
     students = db.session.query(Student).all()
-    for student in students:
-        student.user_info = db.session.query(User).filter_by(id=student.user_id).first()
     return render_template('admin_student_db.html', students=students)
 
 @app.route('/admin_portal/events')
 @user_required
 def admin_events(user):
     events = db.session.query(Event).all()
-    return render_template('admin_events.html', events=events)
+    return render_template('admin_events.html', events=events, faculty_list=faculty_list)
 
 
 if __name__ == '__main__':
