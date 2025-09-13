@@ -80,7 +80,7 @@ function removeServiceDate(index) {
         newIndex++;
 
     const numDates = document.getElementById("num_dates");
-    numDates.value = newIndex + 1;
+    numDates.value = newIndex;
     });
 }
 

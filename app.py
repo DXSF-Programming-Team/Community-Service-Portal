@@ -4,6 +4,7 @@ import os
 from datetime import datetime
 import json
 from functools import wraps
+from flask import jsonify
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
@@ -289,11 +290,14 @@ def student_events(user, student):
             db.session.add(event)
             db.session.commit()
             print(f"Event added successfully")
+            return redirect(url_for('student_events'))
+            #return jsonify({'success': True, 'message': 'Event added successfully'})
         except Exception as e:
             flash("Error adding event. Please try again.", "error")
             print(f"Error adding event: {e}")
             db.session.rollback()
-            return render_template('student_events.html', events=events, faculty_list=faculty_list)
+            return redirect(url_for('student_events'))
+            #return jsonify({'success': False, 'message': 'Error adding event. Please try again.'})
     return render_template('student_events.html', events=events, faculty_list=faculty_list)
 
 @app.route('/admin_portal')
