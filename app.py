@@ -4,6 +4,7 @@ import os
 from datetime import datetime
 import json
 from functools import wraps
+from flask import jsonify
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
@@ -49,10 +50,12 @@ class ServiceRecord(db.Model):
 class Event(db.Model):
     __tablename__ = 'events'
     id = db.Column(db.Integer, primary_key=True)
+    creator_name = db.Column(db.String(100), nullable=False)
+    creator_email = db.Column(db.String(100), nullable=False)
     dates = db.Column(db.ARRAY(db.String(100)), nullable=False)
-    location = db.Column(db.String(100), nullable=False)
     organization_name = db.Column(db.String(100), nullable=False)
     event_name = db.Column(db.String(100), nullable=False)
+    location = db.Column(db.String(100), nullable=False)
     contact_name = db.Column(db.String(100), nullable=False)
     contact_email = db.Column(db.String(100), nullable=False)
     hours_offered = db.Column(db.Integer, nullable=False)
@@ -190,12 +193,16 @@ def logout():
 @app.route('/student_portal')
 @user_required
 def student_portal(user, student):
+    if request.method == 'GET':
+        get_flashed_messages()
     events = db.session.query(Event).all()
     return render_template('student_portal.html', student=student, events=events, faculty_list=faculty_list)
 
 @app.route('/student_portal/form', methods=['GET', 'POST'])
 @user_required
 def student_form(user, student):
+    if request.method == 'GET':
+        get_flashed_messages()
     in_school = request.args.get('in_school')
     if request.method == 'POST':
         dates = []
@@ -241,9 +248,11 @@ def student_form(user, student):
         return redirect(url_for('student_portal'))
     return render_template('student_form.html', senior_grad_year=senior_grad_year, faculty_list=faculty_list, in_school=in_school, student=student)
 
-@app.route('/student_portal/events')
+@app.route('/student_portal/events', methods=['GET', 'POST'])
 @user_required
 def student_events(user, student):
+    if request.method == 'GET':
+        get_flashed_messages()
     events = db.session.query(Event).all()
     if request.method == 'POST':
         dates = []
@@ -251,10 +260,12 @@ def student_events(user, student):
             dates.append(request.form['service_date_input_' + str(i)])
         if request.form['in_school'] == 'true':
             event = Event(
-                student_id=student.user_id,
+                creator_name=student.user.first_name + ' ' + student.user.last_name,
+                creator_email=student.user.email,
                 dates=dates,
                 organization_name='Dexter Southfield',
                 event_name=request.form['event_name'],
+                location=request.form['location'],
                 contact_name=request.form['school_contact_name_hidden'],
                 contact_email=request.form['school_contact_email'],
                 hours_offered=request.form['hours'],
@@ -263,10 +274,12 @@ def student_events(user, student):
             )
         elif request.form['in_school'] == 'false':
             event = Event(
-                student_id=student.user_id,
+                creator_name=student.user.first_name + ' ' + student.user.last_name,
+                creator_email=student.user.email,
                 dates=dates,
                 organization_name=request.form['external_organization_name'],
                 event_name=request.form['event_name'],
+                location=request.form['location'],
                 contact_name=request.form['external_contact_first_name'] + ' ' + request.form['external_contact_last_name'],
                 contact_email=request.form['external_contact_email'],
                 hours_offered=request.form['hours'],
@@ -277,27 +290,36 @@ def student_events(user, student):
             db.session.add(event)
             db.session.commit()
             print(f"Event added successfully")
+            return redirect(url_for('student_events'))
+            #return jsonify({'success': True, 'message': 'Event added successfully'})
         except Exception as e:
             flash("Error adding event. Please try again.", "error")
             print(f"Error adding event: {e}")
             db.session.rollback()
-            return render_template('student_events.html', events=events, faculty_list=faculty_list)
+            return redirect(url_for('student_events'))
+            #return jsonify({'success': False, 'message': 'Error adding event. Please try again.'})
     return render_template('student_events.html', events=events, faculty_list=faculty_list)
 
 @app.route('/admin_portal')
 @user_required
 def admin_portal(user):
+    if request.method == 'GET':
+        get_flashed_messages()
     return render_template('admin_portal.html')
 
 @app.route('/admin_portal/students')
 @user_required
 def admin_students(user):
+    if request.method == 'GET':
+        get_flashed_messages()
     students = db.session.query(Student).all()
     return render_template('admin_student_db.html', students=students)
 
 @app.route('/admin_portal/events')
 @user_required
 def admin_events(user):
+    if request.method == 'GET':
+        get_flashed_messages()
     events = db.session.query(Event).all()
     return render_template('admin_events.html', events=events, faculty_list=faculty_list)
 

@@ -2,10 +2,131 @@
 {% block title %}Events{% endblock %}
 {% block styles %}
     <style>
+        .content-container {
+            max-width: 90%;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+        }
         .events-container {
             display: flex;
             flex-direction: column;
             gap: 10px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 10px;
+            width: 100%;
+            max-height: 800px;
+            overflow-y: scroll;
+        }
+        .event-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e9ecef;
+            overflow: hidden;
+        }
+        .event-card-header {
+            background: linear-gradient(135deg, #002d5b 0%, #0056b3 100%);
+            color: white;
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .event-card-header h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .event-card-header .organization {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        .event-card-header-subtitle {
+            background-color: rgba(0, 45, 91, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .event-card-header-subtitle p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .event-card-body {
+            padding: 1.5rem;
+        }
+        .event-card-body p {
+            margin: 0 0 0.75rem 0;
+            line-height: 1.5;
+        }
+        .event-card-body p:last-child {
+            margin-bottom: 0;
+        }
+        .event-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .event-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .event-detail-item i {
+            color: #002d5b;
+            width: 16px;
+        }
+        .event-detail-item span {
+            font-weight: 500;
+            color: #495057;
+        }
+        .event-status {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .event-status.in-school {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .event-status.out-school {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .no-events-message {
+            text-align: center;
+            padding: 3rem 2rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 2px dashed #dee2e6;
+            margin: 2rem 0;
+        }
+        .no-events-icon {
+            font-size: 4rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        .no-events-message h3 {
+            color: #495057;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .no-events-message p {
+            color: #6c757d;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
         }
 
         /* Modal stuff */
@@ -170,7 +291,8 @@
         }
     </style>
 {% endblock %}
-{% block body %}
+{% block content %}
+<div class="content-container">
     <h1 class="text-center header-text">Upcoming Events</h1>
     
     <div class="modal-btn-container">
@@ -188,11 +310,11 @@
                     <form method="POST" action="/student_portal/events" id="eventForm">
                         <div class="form-group required">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="in_school" id="in_school_true">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_true" value="true">
                                 <label class="form-check-label no-asterisk" for="in_school_true">In-School Event</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="in_school" id="in_school_false">
+                                <input class="form-check-input" type="radio" name="in_school" id="in_school_false" value="false">
                                 <label class="form-check-label no-asterisk" for="in_school_false">Out-of-School Event</label>
                             </div>
                         </div>
@@ -215,6 +337,10 @@
                         <div class="form-group">
                             <label for="event_name" class>Event Name</label>
                             <input type="text" name="event_name" id="event_name" placeholder="Name of community service event" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" name="location" id="location" placeholder="Location of event" required>
                         </div>
                         <div class="form-group in-school-only">
                             <label for="contact_search">Contact</label>
@@ -270,19 +396,62 @@
         </div>
     </div>
     <div class="events-container">
-        {% for event in events %}
-            <div class="event-card">
-                <h3>{{ event.event_name }}</h3>
-                <p>{{ event.description }}</p>
-                <p>{{ event.dates }}</p>
-                <p>{{ event.organization_name }}</p>
-                <p>{{ event.contact_name }}</p>
-                <p>{{ event.contact_email }}</p>
-                <p>{{ event.hours_offered }}</p>
-                <p>{{ event.is_in_school }}</p>
+        {% if events %}
+            {% for event in events %}
+                <div class="event-card">
+                    <div class="event-card-header">
+                        <h3>{{ event.event_name }}</h3>
+                        <p class="organization">{{ event.organization_name }}</p>
+                    </div>
+                    <div class="event-card-header-subtitle">
+                        <p><i class="bi bi-person"></i> {{ event.creator_name }}</p>
+                        <p><i class="bi bi-envelope"></i> {{ event.creator_email }}</p>
+                    </div>
+                    <div class="event-card-body">
+                        <p><strong>Description:</strong> {{ event.description }}</p>
+                        
+                        <div class="event-details">
+                            <div class="event-detail-item">
+                                <i class="bi bi-calendar-event"></i>
+                                <span><strong>Dates:</strong> {{ event.dates|join(', ') }}</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="bi bi-clock"></i>
+                                <span><strong>Hours Offered:</strong> {{ event.hours_offered }}</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <span><strong>Location:</strong> {{ event.location }}</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="bi bi-person-badge"></i>
+                                <span><strong>Contact:</strong> {{ event.contact_name }}</span>
+                            </div>
+                            <div class="event-detail-item">
+                                <i class="bi bi-envelope-at"></i>
+                                <span><strong>Email:</strong> {{ event.contact_email }}</span>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 1rem;">
+                            <span class="event-status {% if event.is_in_school %}in-school{% else %}out-school{% endif %}">
+                                {% if event.is_in_school %}In-School Event{% else %}Out-of-School Event{% endif %}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="no-events-message">
+                <div class="no-events-icon">
+                    <i class="bi bi-calendar-x"></i>
+                </div>
+                <h3>No Events Available</h3>
+                <p>There are currently no community service events scheduled. Check back later or create a new event!</p>
             </div>
-        {% endfor %}
+        {% endif %}
     </div>
+</div>
 {% endblock %}
 {% block scripts %}
     <script src="{{ url_for('static', filename='js/form_logic.js') }}"></script>
