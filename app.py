@@ -300,6 +300,23 @@ def student_events(user, student):
             #return jsonify({'success': False, 'message': 'Error adding event. Please try again.'})
     return render_template('student_events.html', events=events, faculty_list=faculty_list)
 
+@app.route('/student_portal/organizations')
+@user_required
+def student_organizations(user, student):
+    if request.method == 'GET':
+        get_flashed_messages()
+    return render_template('student_need_hours.html', faculty_list=faculty_list)
+
+@app.route('/student_portal/service_records')
+@user_required
+def student_service_records(user, student):
+    view = request.args.get('view')
+    service_records = db.session.query(ServiceRecord).filter_by(student_id=student.user_id).all()
+    if request.method == 'GET':
+        get_flashed_messages()
+    return render_template('student_service_records.html', student=student, service_records=service_records, view=view)
+
+
 @app.route('/admin_portal')
 @user_required
 def admin_portal(user):

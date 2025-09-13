@@ -289,12 +289,15 @@
             display: flex;
             gap: 10px;
         }
+        .page-title {
+            margin-top: 2rem;
+        }
     </style>
 {% endblock %}
 {% block content %}
+<h1 class="text-center header-text page-title">Upcoming Events</h1>
+
 <div class="content-container">
-    <h1 class="text-center header-text">Upcoming Events</h1>
-    
     <div class="modal-btn-container">
         <a class="btn modal-btn" data-bs-toggle="modal" data-bs-target="#eventModal"><i class="bi bi-plus-circle"></i> Create a New Event</a>
     </div>

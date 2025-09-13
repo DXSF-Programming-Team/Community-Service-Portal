@@ -66,21 +66,23 @@
     </style>
 {% endblock %}
 {% block body %}
+<div class="page-container">
     <h1 class="text-center header-text">Welcome back, {{ student.user.first_name }}</h1>
     <p class="text-center text-muted">Here you can track your community service progress, log new hours, and view upcoming events.</p>
     <br>
     <div class="stats-grid">
-        <div class="stat-card total-hours">
+        <a href="/student_portal/service_records?view=all" class="stat-card-link total-hours">
             <div class="stat-number">{{ student.in_school_hours + student.out_of_school_hours }}</div>
             <div class="stat-label">Total Hours</div>
-        </div>
-        <a href="/student_portal/form?in_school=true" class="stat-card-link">
+        </a>
+        <a href="/student_portal/service_records?view=in_school" class="stat-card-link">
             <div class="stat-number">{{ student.in_school_hours }}</div>
             <div class="stat-label">In-School Hours</div>
         </a>
-        <a href="/student_portal/form?in_school=false" class="stat-card-link">
+        <a href="/student_portal/service_records?view=out_school" class="stat-card-link">
             <div class="stat-number">{{ student.out_of_school_hours }}</div>
             <div class="stat-label">Out-of-School Hours</div>
         </a>
     </div>
+</div>
 {% endblock %}
