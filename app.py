@@ -61,6 +61,7 @@ class Event(db.Model):
     hours_offered = db.Column(db.Integer, nullable=False)
     description = db.Column(db.String(1000), nullable=False)
     is_in_school = db.Column(db.Boolean, nullable=False)
+    status = db.Column(db.String(100), nullable=False)
 
 
 
@@ -271,6 +272,7 @@ def student_events(user, student):
                 hours_offered=request.form['hours'],
                 description=request.form['description'],
                 is_in_school=True,
+                status='pending'
             )
         elif request.form['in_school'] == 'false':
             event = Event(
@@ -285,6 +287,7 @@ def student_events(user, student):
                 hours_offered=request.form['hours'],
                 description=request.form['description'],
                 is_in_school=False,
+                status='pending'
             )
         try:
             db.session.add(event)
@@ -338,7 +341,60 @@ def admin_events(user):
     if request.method == 'GET':
         get_flashed_messages()
     events = db.session.query(Event).all()
+    if request.method == 'POST':
+        dates = []
+        for i in range(int(request.form['num_dates'])):
+            dates.append(request.form['service_date_input_' + str(i)])
+        if request.form['in_school'] == 'true':
+            event = Event(
+                creator_name=user.first_name + ' ' + user.last_name,
+                creator_email=user.email,
+                dates=dates,
+                organization_name='Dexter Southfield',
+                event_name=request.form['event_name'],
+                location=request.form['location'],
+                contact_name=request.form['school_contact_name_hidden'],
+                contact_email=request.form['school_contact_email'],
+                hours_offered=request.form['hours'],
+                description=request.form['description'],
+                is_in_school=True,
+                status='approved'
+            )
+        elif request.form['in_school'] == 'false':
+            event = Event(
+                creator_name=user.first_name + ' ' + user.last_name,
+                creator_email=user.email,
+                dates=dates,
+                organization_name=request.form['external_organization_name'],
+                event_name=request.form['event_name'],
+                location=request.form['location'],
+                contact_name=request.form['external_contact_first_name'] + ' ' + request.form['external_contact_last_name'],
+                contact_email=request.form['external_contact_email'],
+                hours_offered=request.form['hours'],
+                description=request.form['description'],
+                is_in_school=False,
+                status='approved'
+            )
+        try:
+            db.session.add(event)
+            db.session.commit()
+            print(f"Event added successfully")
+            return redirect(url_for('admin_events'))
+            #return jsonify({'success': True, 'message': 'Event added successfully'})
+        except Exception as e:
+            flash("Error adding event. Please try again.", "error")
+            print(f"Error adding event: {e}")
+            db.session.rollback()
+            return redirect(url_for('admin_events'))
+            #return jsonify({'success': False, 'message': 'Error adding event. Please try again.'})
     return render_template('admin_events.html', events=events, faculty_list=faculty_list)
+
+@app.route('/admin_portal/pending_requests')
+@user_required
+def admin_pending_requests(user):
+    if request.method == 'GET':
+        get_flashed_messages()
+    return render_template('admin_requests.html', faculty_list=faculty_list)
 
 
 if __name__ == '__main__':
