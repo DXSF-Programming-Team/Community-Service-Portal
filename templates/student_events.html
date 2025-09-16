@@ -408,8 +408,8 @@
                         <p class="organization">{{ event.organization_name }}</p>
                     </div>
                     <div class="event-card-header-subtitle">
-                        <p><i class="bi bi-person"></i> {{ event.creator_name }}</p>
-                        <p><i class="bi bi-envelope"></i> {{ event.creator_email }}</p>
+                        <p><i class="bi bi-person"></i> {{ event.creator.first_name }} {{ event.creator.last_name }}</p>
+                        <p><i class="bi bi-envelope"></i> {{ event.creator.email }}</p>
                     </div>
                     <div class="event-card-body">
                         <p><strong>Description:</strong> {{ event.description }}</p>

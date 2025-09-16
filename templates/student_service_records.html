@@ -50,14 +50,14 @@
         </div>
     {% elif view == 'in_school' %}
         <h1 class="text-center header-text page-title">In-School Service Records</h1>
-        <p>Below are all of your <strong>in-school</strong> service records. You currently have {{ service_records|length }} in-school service {% if service_records|length == 1 %}record{% else %}records{% endif %}. You have a total of {{ student.in_school_hours }} in-school {% if student.in_school_hours == 1 %}hour{% else %}hours{% endif %} logged.</p>
+        <p>Below are all of your <strong>in-school</strong> service records. You currently have {{ service_records | selectattr('is_in_school', 'equalto', True) | list | length }} in-school service {% if (service_records | selectattr('is_in_school', 'equalto', True) | list | length) == 1 %}record{% else %}records{% endif %}. You have a total of {{ student.in_school_hours }} in-school {% if student.in_school_hours == 1 %}hour{% else %}hours{% endif %} logged.</p>
         <div class="button-group">
             <a href="/student_portal/service_records?view=all" class="btn btn-view">View All Service Records</a>
             <a href="/student_portal/service_records?view=out_school" class="btn btn-view">View Your Out-of-School Service Records</a>
         </div>
     {% elif view == 'out_school' %}
         <h1 class="text-center header-text page-title">Out-of-School Service Records</h1>
-        <p>Below are all of your <strong>out-of-school</strong> service records. You currently have {{ service_records|length }} out-of-school service {% if service_records|length == 1 %}record{% else %}records{% endif %}. You have a total of {{ student.out_of_school_hours }} out-of-school {% if student.out_of_school_hours == 1 %}hour{% else %}hours{% endif %} logged.</p>
+        <p>Below are all of your <strong>out-of-school</strong> service records. You currently have {{ service_records | selectattr('is_in_school', 'equalto', False) | list | length }} out-of-school service {% if (service_records | selectattr('is_in_school', 'equalto', False) | list | length) == 1 %}record{% else %}records{% endif %}. You have a total of {{ student.out_of_school_hours }} out-of-school {% if student.out_of_school_hours == 1 %}hour{% else %}hours{% endif %} logged.</p>
         <div class="button-group">
             <a href="/student_portal/service_records?view=all" class="btn btn-view">View All Service Records</a>
             <a href="/student_portal/service_records?view=in_school" class="btn btn-view">View Your In-School Service Records</a>
