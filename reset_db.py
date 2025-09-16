@@ -78,8 +78,8 @@ def init_db():
     cur.execute("""
         CREATE TABLE events (
             id SERIAL PRIMARY KEY,
-            creator_name VARCHAR(255) NOT NULL,
-            creator_email VARCHAR(255) NOT NULL,
+            creator_id INTEGER NOT NULL,
+            FOREIGN KEY (creator_id) REFERENCES users(id),
             dates TEXT[] NOT NULL,
             organization_name VARCHAR(255) NOT NULL,
             event_name VARCHAR(255) NOT NULL,

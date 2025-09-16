@@ -1,23 +1,311 @@
 {% extends 'admin_portal_base.html' %}
 {% block title %}Pending Requests{% endblock %}
+{% block styles %}
+    <style>
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .tablinks {
+            background-color: transparent;
+            border: none;
+            color: #6c757d;
+            padding: 12px 24px;
+            margin: 0 4px;
+            border-radius: 8px 8px 0 0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+        .tablinks:hover {
+            background-color: #f8f9fa;
+            color: #002d5b;
+        }
+        .tablinks.active {
+            background-color: #002d5b;
+            color: white;
+        }
+        .tablinks.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: #002d5b;
+        }
+        .tabcontent {
+            display: none;
+            /*animation: fadeIn 0.3s ease-in-out;*/
+        }
+        .tabcontent.active {
+            display: block;
+        }
+        .request-card {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .request-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .request-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #002d5b;
+            margin: 0;
+        }
+        .request-status {
+            background-color: #ffc107;
+            color: #212529;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .request-details {
+            margin-bottom: 1rem;
+        }
+        .request-detail {
+            margin-bottom: 0.5rem;
+            color: #6c757d;
+        }
+        .request-detail strong {
+            color: #495057;
+            font-weight: 600;
+        }
+        .request-actions {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: flex-end;
+        }
+        .btn-approve {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-approve:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .btn-deny {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-deny:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: #6c757d;
+        }
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #dee2e6;
+        }
+        .empty-state h3 {
+            color: #495057;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+{% endblock %}
 {% block body %}
 <div class="page-container">
     <h1 class="text-center header-text">Pending Requests</h1>
-    <div class="pending-requests-container">
-        <div class="pending-requests-card">
-            <h2>Event Requests</h2>
-            <div class="pending-requests-card-content">
-                <p>Event Requests</p>
-            </div>
-        </div>
+    <!-- Tab links -->
+    <div class="tab">
+        <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Service Record Requests')">Service Record Requests</button>
+        <button class="tablinks" onclick="openTab(event, 'Event Requests')">Event Requests</button>
     </div>
-    <div class="pending-requests-container">
-        <div class="pending-requests-card">
-            <h2>Service Record Requests</h2>
-            <div class="pending-requests-card-content">
-                <p>Service Record Requests</p>
+
+    <!-- Tab content -->
+    <div id="Service Record Requests" class="tabcontent">
+        {% if service_record_requests %}
+            {% for service_record in service_record_requests %}
+                <div class="request-card">
+                    <div class="request-header">
+                        <h3 class="request-title">{{ service_record.student.user.first_name }} {{ service_record.student.user.last_name }}</h3>
+                        <span class="request-status">Pending</span>
+                    </div>
+                    <div class="request-details">
+                        <div class="request-detail">
+                            <strong>Email:</strong> {{ service_record.student.user.email }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Event:</strong> {{ service_record.event_name }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Organization:</strong> {{ service_record.organization_name }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Hours:</strong> {{ service_record.hours }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Date{% if service_record.dates | length > 1 %}s{% endif %}:</strong> {{ service_record.dates | join(', ') }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Type:</strong> {{ 'In-School' if service_record.is_in_school else 'Out-of-School' }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Description:</strong> {{ service_record.description }}
+                        </div>
+                        {% if service_record.proof_of_service %}
+                        <div class="request-detail">
+                            <strong>Proof of Service:</strong> {{ service_record.proof_of_service }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="request-actions">
+                        <button class="btn btn-deny" 
+                            onclick="updateStatus('service_record', {{ service_record.id }}, 'denied')"
+                            <i class="bi bi-x-circle"></i> Deny
+                        </button>
+                        <button class="btn btn-approve"
+                            onclick="updateStatus('service_record', {{ service_record.id }}, 'approved')"
+                            <i class="bi bi-check-circle"></i> Approve
+                        </button>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="empty-state">
+                <i class="bi bi-inbox"></i>
+                <h3>No Pending Service Records</h3>
+                <p>All service record requests have been processed.</p>
             </div>
-        </div>
+        {% endif %}
     </div>
+    
+    <div id="Event Requests" class="tabcontent">
+        {% if event_requests %}
+            {% for event in event_requests %}
+                <div class="request-card">
+                    <div class="request-header">
+                        <h3 class="request-title">{{ event.creator.first_name }} {{ event.creator.last_name }}</h3>
+                        <span class="request-status">Pending</span>
+                    </div>
+                    <div class="request-details">
+                        <div class="request-detail">
+                            <strong>Email:</strong> {{ event.creator.email }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Event Name:</strong> {{ event.event_name }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Organization:</strong> {{ event.organization_name }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Location:</strong> {{ event.location }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Hours Offered:</strong> {{ event.hours_offered }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Type:</strong> {{ 'In-School' if event.is_in_school else 'Out-of-School' }}
+                        </div>
+                        <div class="request-detail">
+                            <strong>Description:</strong> {{ event.description }}
+                        </div>
+                        {% if event.dates %}
+                        <div class="request-detail">
+                            <strong>Date{% if event.dates | length > 1 %}s{% endif %}:</strong> {{ event.dates | join(', ') }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="request-actions">
+                        <button class="btn btn-deny"
+                            onclick="updateStatus('event', event.id, 'denied')"
+                            <i class="bi bi-x-circle"></i> Deny
+                        </button>
+                        <button class="btn btn-approve"
+                            onclick="updateStatus('event', event.id, 'approved')"
+                            <i class="bi bi-check-circle"></i> Approve
+                        </button>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="empty-state">
+                <i class="bi bi-inbox"></i>
+                <h3>No Pending Events</h3>
+                <p>All event requests have been processed.</p>
+            </div>
+        {% endif %}
+    </div>
+
 </div>
+{% endblock %}
+{% block scripts %}
+<script>
+    function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    function updateStatus(type, id, status) {
+        if (!confirm(`Are you sure you want to ${status} this ${type.replace('_', ' ')}?`)) {
+            return;
+        }
+        
+        fetch('/admin_portal/update_status', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                type: type,
+                id: id,
+                status: status
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Show success message and reload page to reflect changes
+                window.location.reload();
+            } else {
+                alert('Error updating status: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error updating status. Please try again.');
+        });
+    }
+    document.getElementById("defaultOpen").click();
+
+</script>
 {% endblock %}

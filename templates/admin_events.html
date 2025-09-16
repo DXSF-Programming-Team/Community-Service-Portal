@@ -401,14 +401,15 @@
     <div class="events-container">
         {% if events %}
             {% for event in events %}
+                {% if event.status == 'approved' %}
                 <div class="event-card">
                     <div class="event-card-header">
                         <h3>{{ event.event_name }}</h3>
                         <p class="organization">{{ event.organization_name }}</p>
                     </div>
                     <div class="event-card-header-subtitle">
-                        <p><i class="bi bi-person"></i> {{ event.creator_name }}</p>
-                        <p><i class="bi bi-envelope"></i> {{ event.creator_email }}</p>
+                        <p><i class="bi bi-person"></i> {{ event.creator.first_name }} {{ event.creator.last_name }}</p>
+                        <p><i class="bi bi-envelope"></i> {{ event.creator.email }}</p>
                     </div>
                     <div class="event-card-body">
                         <p><strong>Description:</strong> {{ event.description }}</p>
@@ -443,6 +444,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             {% endfor %}
         {% else %}
             <div class="no-events-message">

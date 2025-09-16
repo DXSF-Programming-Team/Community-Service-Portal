@@ -30,12 +30,12 @@ class Student(db.Model):
     in_school_hours = db.Column(db.Integer, nullable=False)
     out_of_school_hours = db.Column(db.Integer, nullable=False)
     required_hours = db.Column(db.Integer, nullable=False)
-    service_records = db.relationship('ServiceRecord', backref='student')
 
 class ServiceRecord(db.Model):
     __tablename__ = 'service_records'
     id = db.Column(db.Integer, primary_key=True)
     student_id = db.Column(db.Integer, db.ForeignKey('students.user_id'), nullable=False)
+    student = db.relationship('Student', backref='service_records')
     dates = db.Column(db.ARRAY(db.String(100)), nullable=False)
     organization_name = db.Column(db.String(1000), nullable=False)
     event_name = db.Column(db.String(100), nullable=False)
@@ -50,8 +50,8 @@ class ServiceRecord(db.Model):
 class Event(db.Model):
     __tablename__ = 'events'
     id = db.Column(db.Integer, primary_key=True)
-    creator_name = db.Column(db.String(100), nullable=False)
-    creator_email = db.Column(db.String(100), nullable=False)
+    creator_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    creator = db.relationship('User', backref='events')
     dates = db.Column(db.ARRAY(db.String(100)), nullable=False)
     organization_name = db.Column(db.String(100), nullable=False)
     event_name = db.Column(db.String(100), nullable=False)
@@ -98,7 +98,6 @@ def user_required(f):
         else:
             return redirect(url_for('login'))
     return decorated_function
-
 
 @app.route('/')
 def index():
@@ -261,8 +260,7 @@ def student_events(user, student):
             dates.append(request.form['service_date_input_' + str(i)])
         if request.form['in_school'] == 'true':
             event = Event(
-                creator_name=student.user.first_name + ' ' + student.user.last_name,
-                creator_email=student.user.email,
+                creator_id=student.user_id,
                 dates=dates,
                 organization_name='Dexter Southfield',
                 event_name=request.form['event_name'],
@@ -276,8 +274,7 @@ def student_events(user, student):
             )
         elif request.form['in_school'] == 'false':
             event = Event(
-                creator_name=student.user.first_name + ' ' + student.user.last_name,
-                creator_email=student.user.email,
+                creator_id=student.user_id,
                 dates=dates,
                 organization_name=request.form['external_organization_name'],
                 event_name=request.form['event_name'],
@@ -347,8 +344,7 @@ def admin_events(user):
             dates.append(request.form['service_date_input_' + str(i)])
         if request.form['in_school'] == 'true':
             event = Event(
-                creator_name=user.first_name + ' ' + user.last_name,
-                creator_email=user.email,
+                creator_id=user.id,
                 dates=dates,
                 organization_name='Dexter Southfield',
                 event_name=request.form['event_name'],
@@ -362,8 +358,7 @@ def admin_events(user):
             )
         elif request.form['in_school'] == 'false':
             event = Event(
-                creator_name=user.first_name + ' ' + user.last_name,
-                creator_email=user.email,
+                creator_id=user.id,
                 dates=dates,
                 organization_name=request.form['external_organization_name'],
                 event_name=request.form['event_name'],
@@ -392,9 +387,54 @@ def admin_events(user):
 @app.route('/admin_portal/pending_requests')
 @user_required
 def admin_pending_requests(user):
+    service_record_requests = db.session.query(ServiceRecord).filter_by(status='pending').all()
+    event_requests = db.session.query(Event).filter_by(status='pending').all()
     if request.method == 'GET':
         get_flashed_messages()
-    return render_template('admin_requests.html', faculty_list=faculty_list)
+    return render_template('admin_requests.html', faculty_list=faculty_list, service_record_requests=service_record_requests, event_requests=event_requests)
+
+@app.route('/admin_portal/update_status', methods=['POST'])
+@user_required
+def update_status(user):
+    if user.role != 'admin':
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    data = request.get_json()
+    item_type = data.get('type')
+    item_id = data.get('id')
+    new_status = data.get('status')
+    
+    if not all([item_type, item_id, new_status]):
+        return jsonify({'success': False, 'message': 'Missing required parameters'}), 400
+    
+    try:
+        if item_type == 'service_record':
+            record = db.session.query(ServiceRecord).filter_by(id=item_id).first()
+            if not record:
+                return jsonify({'success': False, 'message': 'Service record not found'}), 404
+            record.status = new_status
+            
+            # If approved, update student's hours
+            if new_status == 'approved':
+                if record.is_in_school:
+                    record.student.in_school_hours += record.hours
+                else:
+                    record.student.out_of_school_hours += record.hours
+                    
+        elif item_type == 'event':
+            event = db.session.query(Event).filter_by(id=item_id).first()
+            if not event:
+                return jsonify({'success': False, 'message': 'Event not found'}), 404
+            event.status = new_status
+        else:
+            return jsonify({'success': False, 'message': 'Invalid item type'}), 400
+        
+        db.session.commit()
+        return jsonify({'success': True, 'message': f'{item_type.replace("_", " ")} {new_status} successfully'})
+        
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'success': False, 'message': f'Error updating status: {str(e)}'}), 500
 
 
 if __name__ == '__main__':
