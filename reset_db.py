@@ -1,7 +1,8 @@
 import psycopg2
+import pandas as pd
 
 def init_db():
-
+    
     conn = psycopg2.connect(
         host="localhost",
         database="app_db",
@@ -18,7 +19,7 @@ def init_db():
 
     cur.execute("""
         CREATE TABLE users (
-            id SERIAL PRIMARY KEY,
+            id INTEGER PRIMARY KEY,
             email VARCHAR(255) NOT NULL,
             role VARCHAR(255) NOT NULL,
             password_salt VARCHAR(255) NOT NULL,
@@ -28,8 +29,7 @@ def init_db():
         )
     """)
 
-    cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('admin@admin.com', 'admin', 'admin', 'admin', 'Admin', 'Admin')")
-    cur.execute("INSERT INTO users (email, role, password_salt, password_hash, first_name, last_name) VALUES ('27mortry@dextersouthfield.org', 'student', 'ryry', 'ryry', 'Ryder', 'Morton')")
+    cur.execute("INSERT INTO users (id, email, role, password_salt, password_hash, first_name, last_name) VALUES (1, 'admin@admin.com', 'admin', 'admin', 'admin', 'Admin', 'Admin')")
 
     cur.execute("""
         CREATE TABLE students (
@@ -41,8 +41,21 @@ def init_db():
             FOREIGN KEY (user_id) REFERENCES users(id)
         )
     """)
+    
+    student_data = pd.read_excel('data/Community Service Hours by Class.xlsx', sheet_name=None)
+    
+    for sheet in student_data:
+        for index, row in student_data[sheet].iterrows():
+            row_lower = {col.lower(): val for col, val in row.items()}
+            # password is the same as the email
+            if pd.notna(row_lower['user id']) and row_lower['user id']:
+                # this user is listed twice
+                if row_lower['user id'] == 4834445 and sheet == '2028':
+                    continue
+                else:
+                    cur.execute("INSERT INTO users (id, email, role, password_salt, password_hash, first_name, last_name) VALUES (%s, %s, %s, %s, %s, %s, %s)", (int(row_lower['user id']), row_lower['email'], 'student', row_lower['email'], row_lower['email'], row_lower['first name'], row_lower['last name']))
+                    cur.execute("INSERT INTO students (user_id, graduation_year, in_school_hours, out_of_school_hours, required_hours) VALUES (%s, %s, %s, %s, %s)", (int(row_lower['user id']), int(row_lower['yog']), row_lower['at dxsf hours'], row_lower['outside dxsf hrs'], row_lower['hours required']))
 
-    cur.execute("INSERT INTO students (user_id, graduation_year, in_school_hours, out_of_school_hours, required_hours) VALUES (2, 2027, 0, 0, 40)")
 
     cur.execute("""
         CREATE TABLE service_records (
@@ -75,7 +88,8 @@ def init_db():
             contact_email VARCHAR(255) NOT NULL,
             hours_offered INTEGER NOT NULL,
             description VARCHAR(255) NOT NULL,
-            is_in_school BOOLEAN NOT NULL
+            is_in_school BOOLEAN NOT NULL,
+            status VARCHAR(255) NOT NULL
         )
     """)
 

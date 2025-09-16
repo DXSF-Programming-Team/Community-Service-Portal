@@ -294,7 +294,7 @@
         }
     </style>
 {% endblock %}
-{% block content %}
+{% block body %}
 <h1 class="text-center header-text page-title">Upcoming Events</h1>
 
 <div class="content-container">
@@ -401,6 +401,7 @@
     <div class="events-container">
         {% if events %}
             {% for event in events %}
+                {% if event.status == 'approved' %}
                 <div class="event-card">
                     <div class="event-card-header">
                         <h3>{{ event.event_name }}</h3>
@@ -443,6 +444,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             {% endfor %}
         {% else %}
             <div class="no-events-message">
